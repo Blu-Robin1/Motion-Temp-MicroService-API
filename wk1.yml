@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  description: This API receives information about crop type & farmland
+  description: This API receives information Motion detection & temperature recording
   version: "1.0.0"
   title: Farming API
   contact:
