@@ -1,0 +1,100 @@
+openapi: 3.0.3
+info:
+  description: This API receives information about crop type & farmland
+  version: "1.0.0"
+  title: Farming API
+  contact:
+    email: oabdelsalam@my.bcit.ca
+paths:
+  /farming/crop:
+    post:
+      summary: Reports what type of crop being grown & relavent information
+      operationId: app.report_crop
+      description: Adds the crop type, amount of grain in one bushel, amount of bushels per area(1m^2)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CropType'
+      responses:
+        '201':
+          description: batch successfully received
+        '400':
+          description: 'invalid input, object invalid'
+    
+  /farming/farmland:
+    post:
+      summary: Reports information about the famrland
+      operationId: app.report_farmland
+      description: Adds information about the farmland, such as size, ph lvl,nitrogen lvl,soil type,& climate
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FarmlandReport'
+      responses:
+        '201':
+          description: batch successfully received
+        '400':
+          description: 'invalid input, object invalid'
+
+components:
+  schemas:
+    CropType:
+      required:
+      - crop_id
+      - crop_name
+      - grain_in_bushel
+      - bushels_per_area
+      properties:
+        crop_id:
+          type: string
+          format: uuid
+          example: "001"
+        crop_name:
+          type: string
+          example: "Wheat"
+        grain_in_bushel:
+          type: integer
+          example: "23"
+        bushels_per_area:
+          type: string
+          example: "220/m^2"
+        recorded_timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+
+    FarmlandReport:
+      required:
+      - farm_id
+      - area
+      - ph_level
+      - nitrogen_lvl
+      - soil_type
+      - climate
+      - recorded_timestamp
+      properties:
+        farm_id:
+          type: string
+          format: uuid
+          example: "d290f1ee-6c54-4b01-90e6-d701748f0851"
+        area:
+          type: string
+          example: "Yellowknife North"
+        ph_level:
+          type: integer
+          example: 4
+        nitrogen_lvl:
+          type: integer
+          example: 59.2
+        soil_type:
+          type: string
+          example: "Sandy soil"
+        climate:
+          type: string
+          example: "humid"
+        recorded_timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
