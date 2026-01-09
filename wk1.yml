@@ -1,37 +1,37 @@
 openapi: 3.0.3
 info:
-  description: This API receives information Motion detection & temperature recording
+  description: This API receives motion detection readings in form of pictures & recives temperature readings at the time of the detection
   version: "1.0.0"
-  title: Farming API
+  title: Temperature & Motion API
   contact:
     email: oabdelsalam@my.bcit.ca
 paths:
-  /farming/crop:
+  /motiontemp/temperature:
     post:
-      summary: Reports what type of crop being grown & relavent information
-      operationId: app.report_crop
-      description: Adds the crop type, amount of grain in one bushel, amount of bushels per area(1m^2)
+      summary: Reports a batch of temperature sensor readings
+      operationId: app.report_temperature_readings
+      description: Adds a batch of temperature readings
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/CropType'
+              $ref: '#/components/schemas/TemperatureReadingBatch'
       responses:
         '201':
           description: batch successfully received
         '400':
           description: 'invalid input, object invalid'
     
-  /farming/farmland:
+  /motiontemp/motion:
     post:
-      summary: Reports information about the famrland
-      operationId: app.report_farmland
-      description: Adds information about the farmland, such as size, ph lvl,nitrogen lvl,soil type,& climate
+      summary: Reports a batch of motion sensor readings
+      operationId: app.report_motion_readings
+      description: Adds a batch of motion readings
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/FarmlandReport'
+              $ref: '#/components/schemas/MotionReadingBatch'
       responses:
         '201':
           description: batch successfully received
@@ -40,61 +40,81 @@ paths:
 
 components:
   schemas:
-    CropType:
+    TemperatureReadingBatch:
       required:
-      - crop_id
-      - crop_name
-      - grain_in_bushel
-      - bushels_per_area
+      - station_id
+      - station_name
+      - reporting_timestamp
+      - readings
       properties:
-        crop_id:
+        station_id:
           type: string
           format: uuid
-          example: "001"
-        crop_name:
+          example: "539bf232-6bba-4553-8c0f-1ccfd2ff5c7d"
+        station_name:
           type: string
-          example: "Wheat"
-        grain_in_bushel:
-          type: integer
-          example: "23"
-        bushels_per_area:
+          example: "Churchill River Upland Ecoregion"
+        reporting_timestamp:
           type: string
-          example: "220/m^2"
+          format: date-time
+          example: "2019-01-29T09:1:33.001Z"
+        readings:
+          type: array
+          items:
+            $ref: '#/components/schemas/TemperatureReading'
+      type: object
+    TemperatureReading:
+      required:
+        - temperature_celsius
+        - recorded_timestamp
+      properties:
+        temperature_celsius:
+          type: number
+          example: -18
         recorded_timestamp:
           type: string
           format: date-time
-          example: "2016-08-29T09:12:33.001Z"
+          example: "2019-01-29T09:1:33.001Z"
+      type: object
 
-    FarmlandReport:
+    MotionReadingBatch:
       required:
-      - farm_id
-      - area
-      - ph_level
-      - nitrogen_lvl
-      - soil_type
-      - climate
-      - recorded_timestamp
+      - station_id
+      - station_name
+      - station_location
+      - reporting_timestamp
+      - readings
       properties:
-        farm_id:
+        station_id:
           type: string
           format: uuid
-          example: "d290f1ee-6c54-4b01-90e6-d701748f0851"
-        area:
+          example: "dc73bb90-ee3c-4a7b-b151-d09edbde4e32"
+        station_name:
           type: string
-          example: "Yellowknife North"
-        ph_level:
-          type: integer
-          example: 4
-        nitrogen_lvl:
-          type: integer
-          example: 59.2
-        soil_type:
+          example: "Churchill River Upland Ecoregion"
+        station_location:
           type: string
-          example: "Sandy soil"
-        climate:
+          format: Degrees-Minutes-Seconds
+          example: 45° 46' 52" N 108° 30' 14" W
+        reporting_timestamp:
           type: string
-          example: "humid"
+          format: date-time
+          example: "2019-01-29T09:1:33.001Z"
+        readings:
+          type: array
+          items:
+            $ref: '#/components/schemas/MotionReading'
+            
+    MotionReading:
+      required:
+        - picture
+        - recorded_timestamp
+      properties:
+        picture:
+          type: string
+          example: motion-detected-1-33.jpg
         recorded_timestamp:
           type: string
           format: date-time
-          example: "2016-08-29T09:12:33.001Z"
+          example: "2019-01-29T09:1:33.001Z"
+      type: object
