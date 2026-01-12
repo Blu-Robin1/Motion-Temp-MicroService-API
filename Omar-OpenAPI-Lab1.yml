@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   description: This API receives motion detection readings in form of pictures & recives temperature readings at the time of the detection
   version: "1.0.0"
-  title: Temperature & Motion API
+  title: Motion & Temperature API
   contact:
     email: oabdelsalam@my.bcit.ca
 paths:
@@ -94,8 +94,8 @@ components:
           example: "Churchill River Upland Ecoregion"
         station_location:
           type: string
-          format: Degrees-Minutes-Seconds
-          example: 45° 46' 52" N 108° 30' 14" W
+          description: GPS location in degrees-minutes-seconds (DMS) format
+          example: "45° 46' 52\" N 108° 30' 14\" W"
         reporting_timestamp:
           type: string
           format: date-time
