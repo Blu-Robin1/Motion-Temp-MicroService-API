@@ -1,0 +1,20 @@
+{
+  "num_temp_batches": 3,
+  "recent_batch_data": [
+    {
+      "temp_average_celcius": -18.0,
+      "num_temp_readings": 1,
+      "received_timestamp": "2019-01-29T09:1:33.001Z"
+    },
+    {
+      "temp_average_celcius": -18.0,
+      "num_temp_readings": 1,
+      "received_timestamp": "2019-01-29T09:1:33.001Z"
+    },
+    {
+      "temp_average_celcius": -18.0,
+      "num_temp_readings": 1,
+      "received_timestamp": "2019-01-29T09:1:33.001Z"
+    }
+  ]
+}
