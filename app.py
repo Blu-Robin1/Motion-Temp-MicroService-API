@@ -36,13 +36,6 @@ def report_temperature_readings(body):
             "recent_batch_data": []
         }
 
-    # Ensure required keys exist
-    if "num_temp_batches" not in stored_data:
-        stored_data["num_temp_batches"] = 0
-
-    if "recent_batch_data" not in stored_data:
-        stored_data["recent_batch_data"] = []
-
     # Update counts and queue
     stored_data["num_temp_batches"] += 1
     stored_data["recent_batch_data"].append(batch_summary)
