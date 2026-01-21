@@ -108,11 +108,16 @@ components:
     MotionReading:
       required:
         - picture
+        - animal_speed
         - recorded_timestamp
       properties:
         picture:
           type: string
           example: motion-detected-1-33.jpg
+        animal_speed:
+          type: integer
+          description: units m/s
+          example: 4
         recorded_timestamp:
           type: string
           format: date-time
