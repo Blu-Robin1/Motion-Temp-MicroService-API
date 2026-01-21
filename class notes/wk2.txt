@@ -1,0 +1,27 @@
+Strong Module Boundaries, they provide a level of abstraction where 1 teams work on one thing and the other on another and won't affect each other negatively
+
+Independent Deployment: focus on the service itself
+
+Technology Diversity: allows each person expertise to shine
+
+cost:
+
+Distribution: managing the distribution system in headache
+
+Eventual Consistency: eventually need to maintain consistency across all services.
+
+Operational Complexity:
+
+----
+OPENAPI & CONNEXION
+----
+
+name is matched the content will be sent as JSON payload to the body(app.py), read them as python obj, store them into a JSON file
+
+store last 5 of 100 readings
+
+Edge Service: that is the only service being exposed at the edge of the service, only entry point.
+
+Reverse Proxy: finds the empty container to handle the service
+API Gateway: finds the IP of the service
+
