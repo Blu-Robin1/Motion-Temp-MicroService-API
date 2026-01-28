@@ -2,20 +2,16 @@ import connexion
 from connexion import NoContent
 import httpx
 
-# Storage service endpoints
 TEMP_STORAGE_URL = "http://localhost:8090/motiontemp/temperature"
 MOTION_STORAGE_URL = "http://localhost:8090/motiontemp/motion"
 
-# -------------------------------
-# Temperature receiver
-# -------------------------------
+
 def report_temperature_readings(body):
     """
     Receives a batch of temperature readings and posts each one
     to the storage service at /temperature.
     """
-    last_status = 500  # fallback status
-
+    last_status = 500
     for reading in body.get("readings", []):
         data = {
             "station_id": body["station_id"],
@@ -25,21 +21,17 @@ def report_temperature_readings(body):
             "reading_timestamp": reading["recorded_timestamp"]
         }
 
-        # Post each reading to storage
         r = httpx.post(TEMP_STORAGE_URL, json=data, headers={"Content-Type": "application/json"})
         last_status = r.status_code
 
     return NoContent, last_status
 
-# -------------------------------
-# Motion receiver
-# -------------------------------
 def report_motion_readings(body):
     """
     Receives a batch of motion readings and posts each one
     to the storage service at /motion.
     """
-    last_status = 500  # fallback status
+    last_status = 500  
 
     for reading in body.get("readings", []):
         data = {
@@ -52,15 +44,12 @@ def report_motion_readings(body):
             "recorded_timestamp": reading["recorded_timestamp"]
         }
 
-        # Post each reading to storage
         r = httpx.post(MOTION_STORAGE_URL, json=data, headers={"Content-Type": "application/json"})
         last_status = r.status_code
 
     return NoContent, last_status
 
-# -------------------------------
-# Connexion app
-# -------------------------------
+
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api(
     "openapi.yml",

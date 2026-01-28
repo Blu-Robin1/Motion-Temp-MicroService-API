@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
@@ -37,11 +35,11 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;station_id&quot;: &quot;${__UUID()}&quot;,&#xd;
   &quot;station_name&quot;: &quot;${__RandomString(10,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ)}&quot;,&#xd;
-  &quot;reporting_timestamp&quot;: &quot;${__RandomDate(2026-01-28 00:00:00,2026-01-28 23:59:59,yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;)}&quot;,&#xd;
+  &quot;reporting_timestamp&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;,)}&quot;,&#xd;
   &quot;readings&quot;: [&#xd;
     {&#xd;
       &quot;temperature_celsius&quot;: ${__Random(-30,50)},&#xd;
-      &quot;recorded_timestamp&quot;: &quot;${__RandomDate(2026-01-28 00:00:00,2026-01-28 23:59:59,yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;)}&quot;&#xd;
+      &quot;recorded_timestamp&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;,)}&quot;&#xd;
     }&#xd;
   ]&#xd;
 }&#xd;
@@ -67,13 +65,13 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;station_id&quot;: &quot;${__UUID()}&quot;,&#xd;
   &quot;station_name&quot;: &quot;${__RandomString(10,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ)}&quot;,&#xd;
-  &quot;station_location&quot;: &quot;${__RandomString(20,0123456789°&apos;\&quot;NSEW,)}&quot;,&#xd;
-  &quot;reporting_timestamp&quot;: &quot;${__RandomDate(2026-01-28T00:00:00.000Z,2026-01-28T23:59:59.999Z,yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+  &quot;station_location&quot;: &quot;${__RandomString(20,0123456789NSEW,)}&quot;,&#xd;
+  &quot;batch_timestamp&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;,)}&quot;,&#xd;
   &quot;readings&quot;: [&#xd;
     {&#xd;
       &quot;picture&quot;: &quot;motion-detected-${__Random(1,100)}.jpg&quot;,&#xd;
       &quot;animal_speed&quot;: ${__Random(1,20)},&#xd;
-      &quot;recorded_timestamp&quot;: &quot;${__RandomDate(2026-01-28T00:00:00.000Z,2026-01-28T23:59:59.999Z,yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSS&apos;Z&apos;)}&quot;&#xd;
+      &quot;recorded_timestamp&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;,)}&quot;&#xd;
     }&#xd;
   ]&#xd;
 }&#xd;
