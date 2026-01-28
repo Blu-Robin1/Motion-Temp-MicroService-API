@@ -57,7 +57,7 @@ components:
         reporting_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
+          example: "2019-01-29T09:01:33.001Z"
         readings:
           type: array
           items:
@@ -74,7 +74,7 @@ components:
         recorded_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
+          example: "2019-01-29T09:01:33.001Z"
       type: object
 
     MotionReadingBatch:
@@ -82,7 +82,7 @@ components:
       - station_id
       - station_name
       - station_location
-      - reporting_timestamp
+      - batch_timestamp
       - readings
       properties:
         station_id:
@@ -96,10 +96,10 @@ components:
           type: string
           description: GPS location in degrees-minutes-seconds (DMS) format
           example: "45° 46' 52\" N 108° 30' 14\" W"
-        reporting_timestamp:
+        batch_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
+          example: "2019-01-29T09:01:33.001Z"
         readings:
           type: array
           items:
@@ -121,5 +121,5 @@ components:
         recorded_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
+          example: "2019-01-29T09:01:33.001Z"
       type: object

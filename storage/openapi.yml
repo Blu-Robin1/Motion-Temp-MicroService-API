@@ -15,7 +15,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/TemperatureReadingBatch'
+              $ref: '#/components/schemas/TemperatureReading'
       responses:
         '201':
           description: batch successfully received
@@ -31,7 +31,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/MotionReadingBatch'
+              $ref: '#/components/schemas/MotionReading'
       responses:
         '201':
           description: batch successfully received
@@ -40,50 +40,45 @@ paths:
 
 components:
   schemas:
-    TemperatureReadingBatch:
+    TemperatureReading:
       required:
-      - station_id
-      - station_name
-      - reporting_timestamp
-      - readings
+        - station_id
+        - station_name
+        - temperature_celsius
+        - reporting_timestamp
+        - reading_timestamp
       properties:
         station_id:
           type: string
           format: uuid
-          example: "539bf232-6bba-4553-8c0f-1ccfd2ff5c7d"
+          example: "d290f1ee-6c54-4b01-90e6-d701748f0851"
         station_name:
           type: string
-          example: "Churchill River Upland Ecoregion"
+          example: "Yellowknife North"
+        temperature_celsius:
+          type: number
+          example: -13.2
         reporting_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
-        readings:
-          type: array
-          items:
-            $ref: '#/components/schemas/TemperatureReading'
-      type: object
-    TemperatureReading:
-      required:
-        - temperature_celsius
-        - recorded_timestamp
-      properties:
-        temperature_celsius:
-          type: number
-          example: -18
-        recorded_timestamp:
+          example: "2016-08-29T09:12:33.001Z"
+        reading_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
+          example: "2016-08-29T09:12:33.001Z"
       type: object
 
-    MotionReadingBatch:
+
+      
+    MotionReading:
       required:
       - station_id
       - station_name
       - station_location
-      - reporting_timestamp
-      - readings
+      - batch_timestamp
+      - picture
+      - animal_speed
+      - recorded_timestamp
       properties:
         station_id:
           type: string
@@ -96,21 +91,10 @@ components:
           type: string
           description: GPS location in degrees-minutes-seconds (DMS) format
           example: "45° 46' 52\" N 108° 30' 14\" W"
-        reporting_timestamp:
+        batch_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
-        readings:
-          type: array
-          items:
-            $ref: '#/components/schemas/MotionReading'
-            
-    MotionReading:
-      required:
-        - picture
-        - animal_speed
-        - recorded_timestamp
-      properties:
+          example: "2016-08-29T09:12:33.001Z"     
         picture:
           type: string
           example: motion-detected-1-33.jpg
@@ -121,5 +105,5 @@ components:
         recorded_timestamp:
           type: string
           format: date-time
-          example: "2019-01-29T09:1:33.001Z"
+          example: "2016-08-29T09:12:33.001Z"
       type: object
