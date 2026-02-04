@@ -46,7 +46,8 @@ components:
         - station_name
         - temperature_celsius
         - reporting_timestamp
-        - reading_timestamp
+        - recorded_timestamp
+        - trace_id
       properties:
         station_id:
           type: string
@@ -62,7 +63,7 @@ components:
           type: string
           format: date-time
           example: "2016-08-29T09:12:33.001Z"
-        reading_timestamp:
+        recorded_timestamp:
           type: string
           format: date-time
           example: "2016-08-29T09:12:33.001Z"
@@ -79,6 +80,7 @@ components:
       - picture
       - animal_speed
       - recorded_timestamp
+      - trace_id
       properties:
         station_id:
           type: string
@@ -106,4 +108,7 @@ components:
           type: string
           format: date-time
           example: "2016-08-29T09:12:33.001Z"
+        trace_id:
+          type: integer
+          example: 1674123456789012345
       type: object

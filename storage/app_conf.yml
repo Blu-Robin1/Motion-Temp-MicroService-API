@@ -1,0 +1,7 @@
+version: 1
+datastore:
+  user: pyro
+  password: cynical
+  hostname: 127.0.0.1
+  port: 3306
+  db: slop

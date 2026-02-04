@@ -42,10 +42,10 @@ components:
   schemas:
     TemperatureReadingBatch:
       required:
-      - station_id
-      - station_name
-      - reporting_timestamp
-      - readings
+        - station_id
+        - station_name
+        - reporting_timestamp
+        - readings
       properties:
         station_id:
           type: string
@@ -63,6 +63,7 @@ components:
           items:
             $ref: '#/components/schemas/TemperatureReading'
       type: object
+
     TemperatureReading:
       required:
         - temperature_celsius
@@ -79,11 +80,11 @@ components:
 
     MotionReadingBatch:
       required:
-      - station_id
-      - station_name
-      - station_location
-      - batch_timestamp
-      - readings
+        - station_id
+        - station_name
+        - station_location
+        - batch_timestamp
+        - readings
       properties:
         station_id:
           type: string
@@ -104,7 +105,8 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MotionReading'
-            
+      type: object
+
     MotionReading:
       required:
         - picture

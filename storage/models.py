@@ -1,5 +1,5 @@
 from sqlalchemy.orm import DeclarativeBase, mapped_column
-from sqlalchemy import Float, Integer, String, DateTime, func
+from sqlalchemy import Float, Integer, String, DateTime, BigInteger, Text, func
 
 class Base(DeclarativeBase):
     pass
@@ -11,7 +11,8 @@ class Temperature(Base):
     station_name = mapped_column(String(250), nullable=False)
     temp_c = mapped_column(Float, nullable=False)
     reporting_timestamp = mapped_column(DateTime, nullable=False)
-    reading_timestamp = mapped_column(DateTime, nullable=False)
+    recorded_timestamp = mapped_column(DateTime, nullable=False)
+    trace_id = mapped_column(BigInteger, nullable=False)  
     date_created = mapped_column(DateTime, nullable=False, default=func.now())
 
 class Motion(Base):
@@ -21,7 +22,8 @@ class Motion(Base):
     station_name = mapped_column(String(250), nullable=False)
     station_location = mapped_column(String(250), nullable=False)
     animal_speed = mapped_column(Float, nullable=False)
-    picture = mapped_column(String, nullable=False)
+    picture = mapped_column(Text, nullable=False)
     batch_timestamp = mapped_column(DateTime, nullable=False)
     recorded_timestamp = mapped_column(DateTime, nullable=False)
+    trace_id = mapped_column(BigInteger, nullable=False)  
     date_created = mapped_column(DateTime, nullable=False, default=func.now())
