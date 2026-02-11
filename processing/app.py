@@ -9,6 +9,12 @@ import json
 from flask import jsonify, make_response
 from pathlib import Path
 
+#get_stats_endpoint is used for returning current statistics
+#populate_stats, takes the readings from the get_stats, & organizes them by min & max
+#init_schdular , is creating the schduled event with a set intravel thats configured in the 'app_conf.yml'
+
+
+
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
@@ -22,7 +28,7 @@ INTRAVEL = app_config['scheduler']['interval']
 STATS_FILE = app_config['stats_file_name']['name']
 STORAGE_URL = app_config['storage_url']['url']
 
-def get_stats_endpoint():
+def get_stats():
     """GET endpoint for returning current statistics"""
     logger.info("Received request for current statistics")
 
@@ -34,7 +40,6 @@ def get_stats_endpoint():
             jsonify({"message": "Statistics do not exist"}), 404
         )
 
-    # Read statistics JSON
     with stats_path.open("r") as f:
         stats = json.load(f)
 
@@ -46,29 +51,27 @@ def get_stats_endpoint():
 def populate_stats():
     logger.info("Periodic processing started")
 
-    # --- Read existing stats or use defaults ---
     try:
         with open(STATS_FILE, 'r') as f:
             stats = json.load(f)
     except FileNotFoundError:
         stats = {
             "temperature": {
-                "num_temp_readings": 500000,
-                "min_temp_celcius": -60,
-                "max_temp_celcius": 60,
+                "num_temp_readings": 0,
+                "min_temp_celcius": 0,
+                "max_temp_celcius": 0,
                 "last_updated": "2025-01-01T00:00:00Z"
             },
             "motion": {
-                "num_motion_readings": 250000,
+                "num_motion_readings": 0,
                 "min_animal_speed": 0,
-                "max_animal_speed": 15,
+                "max_animal_speed": 0,
                 "last_updated": "2025-01-01T00:00:00Z"
             }
         }
 
     now = datetime.utcnow().isoformat() + "Z"
 
-    # --- Fetch new temperature events ---
     temp_start = stats["temperature"]["last_updated"]
     temp_resp = requests.get(
         f"{STORAGE_URL}/motiontemp/temperature",
@@ -82,7 +85,6 @@ def populate_stats():
         new_temps = temp_resp.json()
         logger.info(f"Received {len(new_temps)} new temperature events")
 
-    # --- Fetch new motion events ---
     motion_start = stats["motion"]["last_updated"]
     motion_resp = requests.get(
         f"{STORAGE_URL}/motiontemp/motion",
@@ -96,7 +98,6 @@ def populate_stats():
         new_motion = motion_resp.json()
         logger.info(f"Received {len(new_motion)} new motion events")
 
-    # --- Update temperature stats ---
     temp_values = [t["temperature_celsius"] for t in new_temps]
     if temp_values:
         stats["temperature"]["num_temp_readings"] += len(temp_values)
@@ -110,7 +111,6 @@ def populate_stats():
         )
         stats["temperature"]["last_updated"] = max([t["recorded_timestamp"] for t in new_temps])
 
-    # --- Update motion stats ---
     speeds = [m["animal_speed"] for m in new_motion]
     if speeds:
         stats["motion"]["num_motion_readings"] += len(speeds)
@@ -124,7 +124,6 @@ def populate_stats():
         )
         stats["motion"]["last_updated"] = max([m["recorded_timestamp"] for m in new_motion])
 
-    # --- Save updated stats ---
     with open(STATS_FILE, 'w') as f:
         json.dump(stats, f, indent=2)
 
