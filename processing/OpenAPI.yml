@@ -8,18 +8,21 @@ info:
 paths:
   /stats:
     get:
-      summary: gets new temperature readings
+      summary: Gets temperature and motion statistics
       operationId: app.get_stats
-      description: Gets Temperature and Precipitation statistics
+      description: Returns statistics for both temperature/precipitation readings and motion readings
       responses:
         '200':
-          description: Successfully returned a stats object
+          description: Successfully returned a combined stats object
           content:
             application/json:
               schema:
                 type: object
-                items:
-                $ref: '#/components/schemas/ReadingStats'
+                properties:
+                  temperature:
+                    $ref: '#/components/schemas/TempStats'
+                  motion:
+                    $ref: '#/components/schemas/MotionStats'
         '400':
           description: Invalid request
           content:
@@ -29,15 +32,14 @@ paths:
                 properties:
                   message:
                     type: string
+
 components:
   schemas:
-    ReadingStats:
+    TempStats:
       required:
-      - num_temp_readings
-      - min_temp_celcius
-      - max_temp_celcius
-      - num_precip_readings
-      - max_precip_mm
+        - num_temp_readings
+        - min_temp_celcius
+        - max_temp_celcius
       properties:
         num_temp_readings:
           type: integer
@@ -48,4 +50,23 @@ components:
         max_temp_celcius:
           type: integer
           example: 60
+      type: object
+
+    MotionStats:
+      required:
+        - num_motion_readings
+        - min_animal_speed
+        - max_animal_speed
+      properties:
+        num_motion_readings:
+          type: integer
+          example: 250000
+        min_animal_speed:
+          type: number
+          description: Minimum recorded animal speed in m/s
+          example: 0
+        max_animal_speed:
+          type: number
+          description: Maximum recorded animal speed in m/s
+          example: 15
       type: object
