@@ -13,9 +13,8 @@ with open('log_conf.yml', 'r') as f:
 
 logger = logging.getLogger('basicLogger')
 
-
 STATS_FILE = "stats.json"
-STORAGE_URL = "http://localhost:8090" 
+STORAGE_URL = "http://localhost:8090"  # storage service base URL
 
 def populate_stats():
     logger.info("Periodic processing started")
@@ -42,8 +41,8 @@ def populate_stats():
 
     now = datetime.utcnow().isoformat() + "Z"
 
-    # --- Get new temperature events ---
-    temp_start = stats["temperature"]["last_event_timestamp"]
+    # --- Fetch new temperature events ---
+    temp_start = stats["temperature"]["last_updated"]
     temp_resp = requests.get(
         f"{STORAGE_URL}/motiontemp/temperature",
         params={"start_timestamp": temp_start, "end_timestamp": now}
@@ -56,8 +55,8 @@ def populate_stats():
         new_temps = temp_resp.json()
         logger.info(f"Received {len(new_temps)} new temperature events")
 
-    # --- Get new motion events ---
-    motion_start = stats["motion"]["last_event_timestamp"]
+    # --- Fetch new motion events ---
+    motion_start = stats["motion"]["last_updated"]
     motion_resp = requests.get(
         f"{STORAGE_URL}/motiontemp/motion",
         params={"start_timestamp": motion_start, "end_timestamp": now}
@@ -82,7 +81,7 @@ def populate_stats():
             max(temp_values) if stats["temperature"]["max_temp_celcius"] is None
             else max(stats["temperature"]["max_temp_celcius"], max(temp_values))
         )
-        stats["temperature"]["last_event_timestamp"] = max([t["reading_timestamp"] for t in new_temps])
+        stats["temperature"]["last_updated"] = max([t["reading_timestamp"] for t in new_temps])
 
     # --- Update motion stats ---
     speeds = [m["animal_speed"] for m in new_motion]
@@ -96,7 +95,7 @@ def populate_stats():
             max(speeds) if stats["motion"]["max_animal_speed"] is None
             else max(stats["motion"]["max_animal_speed"], max(speeds))
         )
-        stats["motion"]["last_event_timestamp"] = max([m["recorded_timestamp"] for m in new_motion])
+        stats["motion"]["last_updated"] = max([m["recorded_timestamp"] for m in new_motion])
 
     # --- Save updated stats ---
     with open(STATS_FILE, 'w') as f:
@@ -104,6 +103,7 @@ def populate_stats():
 
     logger.debug(f"Updated statistics: {stats}")
     logger.info("Periodic processing ended")
+
 
 
 def init_scheduler(interval_seconds=30):
