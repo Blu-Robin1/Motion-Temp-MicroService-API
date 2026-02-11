@@ -1,13 +1,11 @@
 from datetime import datetime
 import connexion
-from connexion import NoContent
-from db import make_session
-from models import Temperature, Motion
 import yaml
 import logging
 import logging.config
-from sqlalchemy import select
-
+from apscheduler.schedulers.background import BackgroundScheduler 
+import requests
+import json
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
@@ -15,113 +13,103 @@ with open('log_conf.yml', 'r') as f:
 
 logger = logging.getLogger('basicLogger')
 
-def report_temperature_readings(body):
-    """Receives a temperature batch event and stores events in DB"""
-    session = make_session()
-    logger.info(f"Received event temperature_report with a trace id of {body.get("trace_id")}")
 
-    event = Temperature(
-        station_id=body["station_id"],
-        station_name=body["station_name"],
-        temp_c=body["temperature_celsius"],
-        reporting_timestamp=datetime.fromisoformat(
-            body["reporting_timestamp"].replace("Z", "+00:00")
-        ),
-        recorded_timestamp=datetime.fromisoformat(
-            body["recorded_timestamp"].replace("Z", "+00:00")
-        ),
-        trace_id=body.get("trace_id")  
-    )
-    session.add(event)
-    session.commit()
-    session.close()
-    
-    logger.debug("Stored event temperature_report with a trace id of %s",body["trace_id"])
-    return NoContent, 201
+STATS_FILE = "stats.json"
+STORAGE_URL = "http://localhost:8090" 
 
-def report_motion_readings(body):
-    """Receives a motion detection event and stores it in DB"""
-    session = make_session()
-    logger.info(f"Received event motion_report with a trace id of {body.get("trace_id")}")    
+def populate_stats():
+    logger.info("Periodic processing started")
 
-    event = Motion(
-        station_id=body["station_id"],
-        station_name=body["station_name"],
-        station_location=body["station_location"],
-        animal_speed=body["animal_speed"],
-        picture=body["picture"],
-        batch_timestamp=datetime.fromisoformat(
-            body["batch_timestamp"].replace("Z", "+00:00")
-        ),
-        recorded_timestamp=datetime.fromisoformat(
-            body["recorded_timestamp"].replace("Z", "+00:00")
-        ),
-        trace_id=body.get("trace_id")  
-    )
-    session.add(event)
-    session.commit()
-    session.close()
-    logger.debug("Stored event motion_report with a trace id of %s",body["trace_id"])
+    # --- Read existing stats or use defaults ---
+    try:
+        with open(STATS_FILE, 'r') as f:
+            stats = json.load(f)
+    except FileNotFoundError:
+        stats = {
+            "temperature": {
+                "num_temp_readings": 0,
+                "min_temp_celcius": None,
+                "max_temp_celcius": None,
+                "last_event_timestamp": "1970-01-01T00:00:00Z"
+            },
+            "motion": {
+                "num_motion_readings": 0,
+                "min_animal_speed": None,
+                "max_animal_speed": None,
+                "last_event_timestamp": "1970-01-01T00:00:00Z"
+            }
+        }
 
-    return NoContent, 201
+    now = datetime.utcnow().isoformat() + "Z"
 
-def get_temperature_readings(start_timestamp, end_timestamp):
-    """ Gets new temperature readings between the start and end timestamps """
-
-    session = make_session()
-
-    start = datetime.fromisoformat(start_timestamp.replace("Z", "+00:00"))
-    end = datetime.fromisoformat(end_timestamp.replace("Z", "+00:00"))
-
-    statement = (
-        select(Temperature)
-        .where(Temperature.date_created >= start)
-        .where(Temperature.date_created < end)
+    # --- Get new temperature events ---
+    temp_start = stats["temperature"]["last_event_timestamp"]
+    temp_resp = requests.get(
+        f"{STORAGE_URL}/motiontemp/temperature",
+        params={"start_timestamp": temp_start, "end_timestamp": now}
     )
 
-    results = [
-        result.to_dict()
-        for result in session.execute(statement).scalars().all()
-    ]
+    if temp_resp.status_code != 200:
+        logger.error(f"Temperature GET request failed with status {temp_resp.status_code}")
+        new_temps = []
+    else:
+        new_temps = temp_resp.json()
+        logger.info(f"Received {len(new_temps)} new temperature events")
 
-    session.close()
-
-    logger.debug(
-        "Found %d temperature readings (start: %s, end: %s)",
-        len(results), start, end
+    # --- Get new motion events ---
+    motion_start = stats["motion"]["last_event_timestamp"]
+    motion_resp = requests.get(
+        f"{STORAGE_URL}/motiontemp/motion",
+        params={"start_timestamp": motion_start, "end_timestamp": now}
     )
 
-    return results
+    if motion_resp.status_code != 200:
+        logger.error(f"Motion GET request failed with status {motion_resp.status_code}")
+        new_motion = []
+    else:
+        new_motion = motion_resp.json()
+        logger.info(f"Received {len(new_motion)} new motion events")
+
+    # --- Update temperature stats ---
+    temp_values = [t["temperature_celsius"] for t in new_temps]
+    if temp_values:
+        stats["temperature"]["num_temp_readings"] += len(temp_values)
+        stats["temperature"]["min_temp_celcius"] = (
+            min(temp_values) if stats["temperature"]["min_temp_celcius"] is None
+            else min(stats["temperature"]["min_temp_celcius"], min(temp_values))
+        )
+        stats["temperature"]["max_temp_celcius"] = (
+            max(temp_values) if stats["temperature"]["max_temp_celcius"] is None
+            else max(stats["temperature"]["max_temp_celcius"], max(temp_values))
+        )
+        stats["temperature"]["last_event_timestamp"] = max([t["reading_timestamp"] for t in new_temps])
+
+    # --- Update motion stats ---
+    speeds = [m["animal_speed"] for m in new_motion]
+    if speeds:
+        stats["motion"]["num_motion_readings"] += len(speeds)
+        stats["motion"]["min_animal_speed"] = (
+            min(speeds) if stats["motion"]["min_animal_speed"] is None
+            else min(stats["motion"]["min_animal_speed"], min(speeds))
+        )
+        stats["motion"]["max_animal_speed"] = (
+            max(speeds) if stats["motion"]["max_animal_speed"] is None
+            else max(stats["motion"]["max_animal_speed"], max(speeds))
+        )
+        stats["motion"]["last_event_timestamp"] = max([m["recorded_timestamp"] for m in new_motion])
+
+    # --- Save updated stats ---
+    with open(STATS_FILE, 'w') as f:
+        json.dump(stats, f, indent=2)
+
+    logger.debug(f"Updated statistics: {stats}")
+    logger.info("Periodic processing ended")
 
 
-def get_motion_readings(start_timestamp, end_timestamp):
-    """ Gets new motion readings between the start and end timestamps """
-
-    session = make_session()
-
-    start = datetime .fromisoformat(start_timestamp.replace("Z", "+00:00"))
-    end = datetime .fromisoformat(end_timestamp.replace("Z", "+00:00"))
-
-    statement = (
-        select(Motion)
-        .where(Motion.date_created >= start)
-        .where(Motion.date_created < end)
-    )
-
-    results = [
-        result.to_dict()
-        for result in session.execute(statement).scalars().all()
-    ]
-
-    session.close()
-
-    logger.debug(
-        "Found %d motion readings (start: %s, end: %s)",
-        len(results), start, end
-    )
-
-    return results
-
+def init_scheduler(interval_seconds=30):
+    sched = BackgroundScheduler(daemon=True)
+    sched.add_job(populate_stats, 'interval', seconds=interval_seconds)
+    sched.start()
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
@@ -131,7 +119,6 @@ app.add_api(
     validate_responses=True
 )
 
-application = app.app
-
-if __name__=="__main__":
+if __name__ == "__main__":
+    init_scheduler() 
     app.run(port=8100)
