@@ -27,16 +27,16 @@ def populate_stats():
     except FileNotFoundError:
         stats = {
             "temperature": {
-                "num_temp_readings": 0,
-                "min_temp_celcius": None,
-                "max_temp_celcius": None,
-                "last_event_timestamp": "1970-01-01T00:00:00Z"
+                "num_temp_readings": 500000,
+                "min_temp_celcius": -60,
+                "max_temp_celcius": 60,
+                "last_event_timestamp": "2025-01-01T00:00:00Z"
             },
             "motion": {
-                "num_motion_readings": 0,
-                "min_animal_speed": None,
-                "max_animal_speed": None,
-                "last_event_timestamp": "1970-01-01T00:00:00Z"
+                "num_motion_readings": 250000,
+                "min_animal_speed": 0,
+                "max_animal_speed": 15,
+                "last_event_timestamp": "2025-01-01T00:00:00Z"
             }
         }
 

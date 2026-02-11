@@ -1,0 +1,75 @@
+2026-02-11 00:41:47,845 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:41:47,906 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:41:47,929 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:41:47,930 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:41:47,930 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:42:17,845 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:42:17,965 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:42:18,043 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:42:18,044 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:42:18,044 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:42:47,845 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:42:47,976 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:42:48,114 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:42:48,115 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:42:48,115 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:43:17,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:43:17,910 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:43:17,993 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:43:17,993 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:43:17,993 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:43:47,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:43:47,854 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:43:47,871 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:43:47,872 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:43:47,872 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:49:57,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:49:57,863 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:49:57,885 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:49:57,886 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:49:57,886 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:50:27,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:50:27,853 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:50:27,979 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:50:27,980 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:50:27,980 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:50:57,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:50:57,914 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:50:57,999 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:50:57,999 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 0, 'min_temp_celcius': None, 'max_temp_celcius': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '1970-01-01T00:00:00Z'}}
+2026-02-11 00:50:57,999 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:51:27,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:51:27,922 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:51:28,002 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:51:28,002 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 500000, 'min_temp_celcius': -60, 'max_temp_celcius': 60, 'last_event_timestamp': '2025-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '2025-01-01T00:00:00Z'}}
+2026-02-11 00:51:28,002 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:51:57,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:51:57,916 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:51:58,056 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:51:58,056 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 500000, 'min_temp_celcius': -60, 'max_temp_celcius': 60, 'last_event_timestamp': '2025-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '2025-01-01T00:00:00Z'}}
+2026-02-11 00:51:58,056 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:52:27,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:52:27,853 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:52:27,865 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:52:27,865 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 500000, 'min_temp_celcius': -60, 'max_temp_celcius': 60, 'last_event_timestamp': '2025-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '2025-01-01T00:00:00Z'}}
+2026-02-11 00:52:27,865 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:52:57,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:52:57,854 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:52:57,866 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:52:57,866 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 500000, 'min_temp_celcius': -60, 'max_temp_celcius': 60, 'last_event_timestamp': '2025-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '2025-01-01T00:00:00Z'}}
+2026-02-11 00:52:57,866 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:53:27,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:53:27,853 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:53:27,927 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:53:27,927 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 500000, 'min_temp_celcius': -60, 'max_temp_celcius': 60, 'last_event_timestamp': '2025-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '2025-01-01T00:00:00Z'}}
+2026-02-11 00:53:27,927 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:53:57,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:53:57,909 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:53:57,982 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:53:57,983 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 500000, 'min_temp_celcius': -60, 'max_temp_celcius': 60, 'last_event_timestamp': '2025-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '2025-01-01T00:00:00Z'}}
+2026-02-11 00:53:57,983 - basicLogger - INFO - Periodic processing ended
+2026-02-11 00:54:27,844 - basicLogger - INFO - Periodic processing started
+2026-02-11 00:54:27,908 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-02-11 00:54:27,985 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-02-11 00:54:27,985 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 500000, 'min_temp_celcius': -60, 'max_temp_celcius': 60, 'last_event_timestamp': '2025-01-01T00:00:00Z'}, 'motion': {'num_motion_readings': 0, 'min_animal_speed': None, 'max_animal_speed': None, 'last_event_timestamp': '2025-01-01T00:00:00Z'}}
+2026-02-11 00:54:27,985 - basicLogger - INFO - Periodic processing ended
