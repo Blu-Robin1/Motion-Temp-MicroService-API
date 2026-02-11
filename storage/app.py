@@ -6,6 +6,7 @@ from models import Temperature, Motion
 import yaml
 import logging
 import logging.config
+from sqlalchemy import select
 
 
 with open('log_conf.yml', 'r') as f:
@@ -63,6 +64,73 @@ def report_motion_readings(body):
     logger.debug("Stored event motion_report with a trace id of %s",body["trace_id"])
 
     return NoContent, 201
+
+def get_temperature_readings(start_timestamp, end_timestamp):
+    """ Gets new temperature readings between the start and end timestamps """
+
+    session = make_session()
+
+    start = datetime.fromisoformat(start_timestamp.replace("Z", "+00:00"))
+    end = datetime.fromisoformat(end_timestamp.replace("Z", "+00:00"))
+
+    statement = (
+        select(Temperature)
+        .where(Temperature.date_created >= start)
+        .where(Temperature.date_created < end)
+    )
+
+    results = [
+        result.to_dict()
+        for result in session.execute(statement).scalars().all()
+    ]
+
+    session.close()
+
+    logger.debug(
+        "Found %d temperature readings (start: %s, end: %s)",
+        len(results), start, end
+    )
+
+    return results
+
+
+def get_motion_readings(start_timestamp, end_timestamp):
+    """ Gets new motion readings between the start and end timestamps """
+
+    session = make_session()
+
+    start = datetime .fromisoformat(start_timestamp.replace("Z", "+00:00"))
+    end = datetime .fromisoformat(end_timestamp.replace("Z", "+00:00"))
+
+    statement = (
+        select(Motion)
+        .where(Motion.date_created >= start)
+        .where(Motion.date_created < end)
+    )
+
+    results = [
+        result.to_dict()
+        for result in session.execute(statement).scalars().all()
+    ]
+
+    session.close()
+
+    logger.debug(
+        "Found %d motion readings (start: %s, end: %s)",
+        len(results), start, end
+    )
+
+    return results
+
+
+
+
+
+
+
+
+
+
 
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api(

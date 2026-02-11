@@ -21,7 +21,38 @@ paths:
           description: batch successfully received
         '400':
           description: 'invalid input, object invalid'
-    
+
+    get:
+      summary: gets new temperature readings
+      operationId: app.get_temperature_readings
+      description: Gets temperature readings received over a timespan
+      parameters:
+        - name: start_timestamp
+          in: query
+          description: Start of the timespan
+          schema:
+            type: string
+            format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+        - name: end_timestamp
+          in: query
+          description: End of the timespan
+          schema:
+            type: string
+            format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+      responses:
+        '200':
+          description: Successfully returned a list of temperature readings
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TemperatureReading'
+
+
+
   /motiontemp/motion:
     post:
       summary: Reports a batch of motion sensor readings
@@ -37,6 +68,40 @@ paths:
           description: batch successfully received
         '400':
           description: 'invalid input, object invalid'
+
+    get:
+      summary: Gets motion readings within a time range
+      operationId: app.get_motion_readings
+      description:  Gets motion readings received over a timespan
+      parameters:
+        - name: start_timestamp
+          in: query
+          description: Start of the timespan
+          schema:
+            type: string
+            format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+        - name: end_timestamp
+          in: query
+          description: End of the timespan
+          schema:
+            type: string
+            format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+      responses:
+        '200':
+          description: Successfully returned a list of motion readings
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MotionReading'
+
+
+
+
+
 
 components:
   schemas:
