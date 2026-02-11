@@ -1,14 +1,14 @@
 {
   "temperature": {
-    "num_temp_readings": 500000,
+    "num_temp_readings": 500047,
     "min_temp_celcius": -60,
     "max_temp_celcius": 60,
-    "last_updated": "2025-01-01T00:00:00Z"
+    "last_updated": "2019-01-29T09:01:33"
   },
   "motion": {
-    "num_motion_readings": 250000,
+    "num_motion_readings": 251489,
     "min_animal_speed": 0,
-    "max_animal_speed": 15,
-    "last_updated": "2025-01-01T00:00:00Z"
+    "max_animal_speed": 20,
+    "last_updated": "2026-02-11T02:07:42"
   }
 }

@@ -43,9 +43,6 @@ def get_stats_endpoint():
 
     return jsonify(stats), 200
 
-
-
-
 def populate_stats():
     logger.info("Periodic processing started")
 
@@ -111,7 +108,7 @@ def populate_stats():
             max(temp_values) if stats["temperature"]["max_temp_celcius"] is None
             else max(stats["temperature"]["max_temp_celcius"], max(temp_values))
         )
-        stats["temperature"]["last_updated"] = max([t["reading_timestamp"] for t in new_temps])
+        stats["temperature"]["last_updated"] = max([t["recorded_timestamp"] for t in new_temps])
 
     # --- Update motion stats ---
     speeds = [m["animal_speed"] for m in new_motion]

@@ -4,4 +4,4 @@ stats_file_name:
 storage_url:
   url: http://localhost:8090
 scheduler:
-  interval: 5
+  interval: 15
