@@ -6,6 +6,8 @@ import logging.config
 from apscheduler.schedulers.background import BackgroundScheduler 
 import requests
 import json
+from flask import jsonify, make_response
+from pathlib import Path
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
@@ -13,8 +15,36 @@ with open('log_conf.yml', 'r') as f:
 
 logger = logging.getLogger('basicLogger')
 
-STATS_FILE = "stats.json"
-STORAGE_URL = "http://localhost:8090"  # storage service base URL
+with open('app_conf.yml', 'r') as f:
+    app_config = yaml.safe_load(f)
+
+INTRAVEL = app_config['scheduler']['interval']
+STATS_FILE = app_config['stats_file_name']['name']
+STORAGE_URL = app_config['storage_url']['url']
+
+def get_stats_endpoint():
+    """GET endpoint for returning current statistics"""
+    logger.info("Received request for current statistics")
+
+    stats_path = Path(STATS_FILE)
+
+    if not stats_path.exists():
+        logger.error("Statistics file does not exist: %s", STATS_FILE)
+        return make_response(
+            jsonify({"message": "Statistics do not exist"}), 404
+        )
+
+    # Read statistics JSON
+    with stats_path.open("r") as f:
+        stats = json.load(f)
+
+    logger.debug("Statistics read from file: %s", stats)
+    logger.info("Request for current statistics completed")
+
+    return jsonify(stats), 200
+
+
+
 
 def populate_stats():
     logger.info("Periodic processing started")
@@ -106,9 +136,9 @@ def populate_stats():
 
 
 
-def init_scheduler(interval_seconds=10):
+def init_scheduler(INTRAVEL):
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(populate_stats, 'interval', seconds=interval_seconds)
+    sched.add_job(populate_stats, 'interval', seconds=INTRAVEL)
     sched.start()
 
 
@@ -120,5 +150,5 @@ app.add_api(
 )
 
 if __name__ == "__main__":
-    init_scheduler() 
+    init_scheduler(INTRAVEL) 
     app.run(port=8100)
