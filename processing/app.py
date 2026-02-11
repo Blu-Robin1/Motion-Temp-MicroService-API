@@ -29,13 +29,13 @@ def populate_stats():
                 "num_temp_readings": 500000,
                 "min_temp_celcius": -60,
                 "max_temp_celcius": 60,
-                "last_event_timestamp": "2025-01-01T00:00:00Z"
+                "last_updated": "2025-01-01T00:00:00Z"
             },
             "motion": {
                 "num_motion_readings": 250000,
                 "min_animal_speed": 0,
                 "max_animal_speed": 15,
-                "last_event_timestamp": "2025-01-01T00:00:00Z"
+                "last_updated": "2025-01-01T00:00:00Z"
             }
         }
 
@@ -106,7 +106,7 @@ def populate_stats():
 
 
 
-def init_scheduler(interval_seconds=30):
+def init_scheduler(interval_seconds=10):
     sched = BackgroundScheduler(daemon=True)
     sched.add_job(populate_stats, 'interval', seconds=interval_seconds)
     sched.start()
