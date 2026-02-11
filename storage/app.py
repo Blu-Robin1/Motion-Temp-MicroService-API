@@ -124,14 +124,6 @@ def get_motion_readings(start_timestamp, end_timestamp):
 
 
 
-
-
-
-
-
-
-
-
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api(
     "openapi.yml",
