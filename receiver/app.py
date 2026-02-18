@@ -1,3 +1,5 @@
+import datetime
+import json
 import connexion
 from connexion import NoContent
 import httpx
@@ -5,6 +7,8 @@ import time
 import yaml
 import logging
 import logging.config
+from pykafka import KafkaClient 
+
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
@@ -15,8 +19,14 @@ logger = logging.getLogger('basicLogger')
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
-TEMP_STORAGE_URL = app_config['temperature']['url']
-MOTION_STORAGE_URL = app_config['motion']['url']
+# TEMP_STORAGE_URL = app_config['temperature']['url']
+# MOTION_STORAGE_URL = app_config['motion']['url']
+
+
+hosts=app_config['events']['hostname']
+port=app_config['events']['port']
+topic_name=app_config['events']['topic']
+
 
 def report_temperature_readings(body):
     """
@@ -26,10 +36,14 @@ def report_temperature_readings(body):
     trace_id = time.time_ns() 
     logger.info(f"Received event temperature_report with a trace id of {trace_id}")
     
+    client = KafkaClient(f"{hosts}:{port}")
+    kafka_topic = client.topics[str.encode(topic_name)]
+    producer = kafka_topic.get_sync_producer()
+
     for reading in body.get("readings", []):
         reading['trace_id'] = trace_id
 
-    last_status = 500
+    last_status = 201
     
     for reading in body.get("readings", []):
         data = {
@@ -41,13 +55,21 @@ def report_temperature_readings(body):
             "trace_id": trace_id 
         }
 
+    
+        msg = { "type": "temperature_report",
+                "datetime": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+                "payload": data
+            }
+
+        msg_str = json.dumps(msg)
+        producer.produce(msg_str.encode('utf-8'))
+
+
         logger.info("Sending temperature reading for event temperature_report (id: %s): %s",trace_id,data)
 
-        r = httpx.post(TEMP_STORAGE_URL, json=data, headers={"Content-Type": "application/json"})
-        last_status = r.status_code
-        
-        logger.info("Response for event temperature_report (id: %s) has status %s",trace_id,r.status_code)
     return NoContent, last_status
+
+
 
 def report_motion_readings(body):
     """
@@ -55,12 +77,17 @@ def report_motion_readings(body):
     to the storage service at /motion.
     """
     trace_id = time.time_ns() 
-    logger.info(f"Received event motion_report with a trace id of {trace_id}")    
+    logger.info(f"Received event motion_report with a trace id of {trace_id}")
+    
+    client = KafkaClient(f"{hosts}:{port}")
+    kafka_topic = client.topics[str.encode(topic_name)]
+    producer = kafka_topic.get_sync_producer()
+    
     for reading in body.get("readings", []):
         reading['trace_id'] = trace_id
 
-    last_status = 500
-    
+    last_status = 201
+
     for reading in body.get("readings", []):
         data = {
             "station_id": body["station_id"],
@@ -72,11 +99,18 @@ def report_motion_readings(body):
             "recorded_timestamp": reading["recorded_timestamp"],
             "trace_id": trace_id
         }
-        logger.info("Sending motion reading for event motion report (id: %s): %s",trace_id,data)
+     
+        msg = { "type": "motion_report",
+                "datetime": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+                "payload": data
+            }
 
-        r = httpx.post(MOTION_STORAGE_URL, json=data, headers={"Content-Type": "application/json"})
-        last_status = r.status_code
-        logger.info("Response for event motion report (id: %s) has status %s",trace_id,r.status_code)
+        msg_str = json.dumps(msg)
+
+        producer.produce(msg_str.encode('utf-8'))
+
+
+        logger.info("Sending motion reading for event motion_report (id: %s): %s",trace_id,data)
 
     return NoContent, last_status
 

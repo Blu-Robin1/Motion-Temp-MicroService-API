@@ -1,5 +1,11 @@
-version: 1
-temperature:
-    url: http://127.0.0.1:8090/motiontemp/temperature
-motion:
-    url: http://127.0.0.1:8090/motiontemp/motion
+# version: 1
+# temperature:
+#     url: http://127.0.0.1:8090/motiontemp/temperature
+# motion:
+#     url: http://127.0.0.1:8090/motiontemp/motion
+
+version: 2
+events:
+    hostname: localhost
+    port: 9092
+    topic: events

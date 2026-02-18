@@ -9,7 +9,7 @@ class Temperature(Base):
     id = mapped_column(Integer, primary_key=True)
     station_id = mapped_column(String(250), nullable=False)
     station_name = mapped_column(String(250), nullable=False)
-    temp_c = mapped_column(Float, nullable=False)
+    temperature_celsius = mapped_column(Float, nullable=False)
     reporting_timestamp = mapped_column(DateTime, nullable=False)
     recorded_timestamp = mapped_column(DateTime, nullable=False)
     trace_id = mapped_column(BigInteger, nullable=False)  
@@ -19,7 +19,7 @@ class Temperature(Base):
         return {
             "station_id": self.station_id,
             "station_name": self.station_name,
-            "temp_c": self.temp_c,
+            "temperature_celsius": self.temperature_celsius,
             "reporting_timestamp": self.reporting_timestamp.isoformat(),
             "recorded_timestamp": self.recorded_timestamp.isoformat(),
             "trace_id": getattr(self, "trace_id", None),

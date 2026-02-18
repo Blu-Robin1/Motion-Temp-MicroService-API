@@ -7,20 +7,20 @@ info:
     email: oabdelsalam@my.bcit.ca
 paths:
   /motiontemp/temperature:
-    post:
-      summary: Reports a batch of temperature sensor readings
-      operationId: app.report_temperature_readings
-      description: Adds a batch of temperature readings
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/TemperatureReading'
-      responses:
-        '201':
-          description: batch successfully received
-        '400':
-          description: 'invalid input, object invalid'
+    # post:
+    #   summary: Reports a batch of temperature sensor readings
+    #   operationId: app.report_temperature_readings
+    #   description: Adds a batch of temperature readings
+    #   requestBody:
+    #     content:
+    #       application/json:
+    #         schema:
+    #           $ref: '#/components/schemas/TemperatureReading'
+    #   responses:
+    #     '201':
+    #       description: batch successfully received
+    #     '400':
+    #       description: 'invalid input, object invalid'
 
     get:
       summary: gets new temperature readings
@@ -54,20 +54,20 @@ paths:
 
 
   /motiontemp/motion:
-    post:
-      summary: Reports a batch of motion sensor readings
-      operationId: app.report_motion_readings
-      description: Adds a batch of motion readings
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/MotionReading'
-      responses:
-        '201':
-          description: batch successfully received
-        '400':
-          description: 'invalid input, object invalid'
+    # post:
+    #   summary: Reports a batch of motion sensor readings
+    #   operationId: app.report_motion_readings
+    #   description: Adds a batch of motion readings
+    #   requestBody:
+    #     content:
+    #       application/json:
+    #         schema:
+    #           $ref: '#/components/schemas/MotionReading'
+    #   responses:
+    #     '201':
+    #       description: batch successfully received
+    #     '400':
+    #       description: 'invalid input, object invalid'
 
     get:
       summary: Gets motion readings within a time range

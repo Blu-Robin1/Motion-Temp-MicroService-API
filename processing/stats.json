@@ -6,9 +6,9 @@
     "last_updated": "2025-01-01T00:00:00Z"
   },
   "motion": {
-    "num_motion_readings": 500,
+    "num_motion_readings": 646,
     "min_animal_speed": 0,
     "max_animal_speed": 20,
-    "last_updated": "2026-02-11T10:38:02"
+    "last_updated": "2019-01-29T09:01:33"
   }
 }

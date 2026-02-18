@@ -1804,3 +1804,17 @@
 2026-02-11 10:38:03,221 - basicLogger - INFO - Response for event motion report (id: 1770835082908651823) has status 201
 2026-02-11 10:38:03,251 - basicLogger - INFO - Response for event motion report (id: 1770835083005324567) has status 201
 2026-02-11 10:38:03,258 - basicLogger - INFO - Response for event motion report (id: 1770835083050340020) has status 201
+2026-02-17 20:29:52,861 - basicLogger - INFO - Received event temperature_report with a trace id of 1771388992861888283
+2026-02-17 20:34:34,598 - basicLogger - INFO - Received event temperature_report with a trace id of 1771389274598780729
+2026-02-17 20:36:55,141 - basicLogger - INFO - Received event temperature_report with a trace id of 1771389415141535740
+2026-02-17 20:40:39,176 - basicLogger - INFO - Received event temperature_report with a trace id of 1771389639176051689
+2026-02-17 20:40:39,227 - basicLogger - INFO - Sending temperature reading for event temperature_report (id: 1771389639176051689): {'station_id': '539bf232-6bba-4553-8c0f-1ccfd2ff5c7d', 'station_name': 'Churchill River Upland Ecoregion', 'temperature_celsius': -18, 'reporting_timestamp': '2019-01-29T09:01:33.001Z', 'recorded_timestamp': '2019-01-29T09:01:33.001Z', 'trace_id': 1771389639176051689}
+2026-02-17 20:52:27,887 - basicLogger - INFO - Received event temperature_report with a trace id of 1771390347887815514
+2026-02-17 20:52:27,896 - basicLogger - INFO - Sending temperature reading for event temperature_report (id: 1771390347887815514): {'station_id': '539bf232-6bba-4553-8c0f-1ccfd2ff5c7d', 'station_name': 'Churchill River Upland Ecoregion', 'temperature_celsius': -18, 'reporting_timestamp': '2019-01-29T09:01:33.001Z', 'recorded_timestamp': '2019-01-29T09:01:33.001Z', 'trace_id': 1771390347887815514}
+2026-02-17 20:53:48,687 - basicLogger - INFO - Received event temperature_report with a trace id of 1771390428687357557
+2026-02-17 20:53:48,699 - basicLogger - INFO - Sending temperature reading for event temperature_report (id: 1771390428687357557): {'station_id': '539bf232-6bba-4553-8c0f-1ccfd2ff5c7d', 'station_name': 'Churchill River Upland Ecoregion', 'temperature_celsius': -18, 'reporting_timestamp': '2019-01-29T09:01:33.001Z', 'recorded_timestamp': '2019-01-29T09:01:33.001Z', 'trace_id': 1771390428687357557}
+2026-02-17 20:54:11,457 - basicLogger - INFO - Received event motion_report with a trace id of 1771390451457251857
+2026-02-17 20:55:42,342 - basicLogger - INFO - Received event motion_report with a trace id of 1771390542342442863
+2026-02-17 20:55:42,358 - basicLogger - INFO - Sending motion reading for event motion_report (id: 1771390542342442863): {'station_id': 'dc73bb90-ee3c-4a7b-b151-d09edbde4e32', 'station_name': 'Churchill River Upland Ecoregion', 'station_location': '45° 46\' 52" N 108° 30\' 14" W', 'animal_speed': 4, 'picture': 'motion-detected-1-33.jpg', 'batch_timestamp': '2019-01-29T09:01:33.001Z', 'recorded_timestamp': '2019-01-29T09:01:33.001Z', 'trace_id': 1771390542342442863}
+2026-02-17 22:32:33,523 - basicLogger - INFO - Received event temperature_report with a trace id of 1771396353523462594
+2026-02-17 22:32:33,547 - basicLogger - INFO - Sending temperature reading for event temperature_report (id: 1771396353523462594): {'station_id': '539bf232-6bba-4553-8c0f-1ccfd2ff5c7d', 'station_name': 'Churchill River Upland Ecoregion', 'temperature_celsius': -18, 'reporting_timestamp': '2019-01-29T09:01:33.001Z', 'recorded_timestamp': '2019-01-29T09:01:33.001Z', 'trace_id': 1771396353523462594}
