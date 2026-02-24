@@ -35,7 +35,7 @@ def report_temperature_readings(body):
     event = Temperature(
         station_id=body["station_id"],
         station_name=body["station_name"],
-        temp_c=body["temperature_celsius"],
+        temperature_celsius=body["temperature_celsius"],
         reporting_timestamp=datetime.fromisoformat(
             body["reporting_timestamp"].replace("Z", "+00:00")
         ),

@@ -9,6 +9,8 @@ import logging
 import logging.config
 from pykafka import KafkaClient 
 
+#send same topic for lab7
+#messages help it distinguis
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
