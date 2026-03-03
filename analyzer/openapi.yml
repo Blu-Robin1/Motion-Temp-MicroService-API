@@ -1,0 +1,157 @@
+openapi: 3.0.3
+info:
+  description: This API provides event info
+  version: "1.0.0"
+  title: Analyzer API
+  contact:
+    email: oabdelsalam@my.bcit.ca
+paths:
+  /motiontemp/temperature:
+    get:
+      summary: gets a temp reading from history
+      operationId: app.get_temp_reading
+      description: Gets temperature readings from the event store
+      parameters:
+        - name: index
+          in: query
+          description: Gets the temp reading at the index in the event store
+          schema:
+            type: integer
+            example: 100
+      responses:
+        '200':
+          description: Successfully returned a tempearture reading
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TemperatureReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /motiontemp/motion:
+    get:
+      summary: gets a motion reading from history
+      operationId: app.get_motion_reading
+      description: Gets temperature readings from the event store
+      parameters:
+        - name: index
+          in: query
+          description: Gets the temp reading at the index in the event store
+          schema:
+            type: integer
+            example: 100
+      responses:
+        '200':
+          description: Successfully returned a motion reading
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MotionReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+  /stats:
+    get:
+    #returns statistics about the events
+      summary: gets the reading stats
+      operationId: app.get_reading_stats
+      description: Gets the stats of the history events
+      responses:
+        '200':
+          description: Successfully returned a combined stats object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Stats'
+
+components:
+  schemas:
+    TemperatureReading:
+      required:
+        - station_id
+        - station_name
+        - temperature_celsius
+        - batch_timestamp
+        - reading_timestamp
+      properties:
+        station_id:
+          type: string
+          format: uuid
+          example: "d290f1ee-6c54-4b01-90e6-d701748f0851"
+        station_name:
+          type: string
+          example: "Yellowknife North"
+        temperature_celsius:
+          type: number
+          example: -13.2
+        batch_timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+        reading_timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+      type: object
+
+    MotionReading:
+      required:
+        - picture
+        - animal_speed
+        - recorded_timestamp
+      properties:
+        picture:
+          type: string
+          example: motion-detected-1-33.jpg
+        animal_speed:
+          type: integer
+          description: units m/s
+          example: 4
+        recorded_timestamp:
+          type: string
+          format: date-time
+          example: "2019-01-29T09:01:33.001Z"
+      type: object
+
+    Stats:
+      required:
+      - num_temp_readings
+      - num_motion_readings
+      properties:
+        num_temp_readings:
+          type: integer
+          example: 100
+        num_motion_readings:
+          type: integer
+          example: 100

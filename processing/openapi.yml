@@ -10,7 +10,7 @@ paths:
     get:
       summary: Gets temperature and motion statistics
       operationId: app.get_stats
-      description: Returns statistics for both temperature/precipitation readings and motion readings
+      description: Returns statistics for both temperature readings and motion readings
       responses:
         '200':
           description: Successfully returned a combined stats object

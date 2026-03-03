@@ -1,0 +1,15 @@
+2026-03-02 16:37:50,252 - basicLogger - INFO - Get request for temperature_reading
+2026-03-02 17:20:45,776 - basicLogger - INFO - Get request for temperature_reading
+2026-03-02 17:22:46,254 - basicLogger - INFO - Get request for temperature_reading
+2026-03-02 17:32:00,210 - basicLogger - INFO - Get request for temperature_reading
+2026-03-02 17:32:21,022 - basicLogger - INFO - Get request for stats
+2026-03-02 17:32:22,942 - basicLogger - INFO - Get request for stats
+2026-03-02 17:34:31,142 - basicLogger - INFO - Get request for stats
+2026-03-02 17:34:32,160 - basicLogger - INFO - Sending stats
+2026-03-02 17:34:47,836 - basicLogger - INFO - Get request for temperature_reading
+2026-03-02 17:34:48,847 - basicLogger - INFO - Sending temperature_reading
+2026-03-02 17:35:19,993 - basicLogger - INFO - Get request for motion_reading
+2026-03-02 17:36:30,926 - basicLogger - INFO - Get request for temperature_reading
+2026-03-02 17:36:31,936 - basicLogger - INFO - Sending temperature_reading
+2026-03-02 17:37:38,113 - basicLogger - INFO - Get request for temperature_reading
+2026-03-02 17:37:39,122 - basicLogger - INFO - Sending temperature_reading
