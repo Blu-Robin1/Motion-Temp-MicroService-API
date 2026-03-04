@@ -102,8 +102,8 @@ components:
         - station_id
         - station_name
         - temperature_celsius
-        - batch_timestamp
-        - reading_timestamp
+        - reporting_timestamp
+        - recorded_timestamp
       properties:
         station_id:
           type: string
@@ -115,11 +115,11 @@ components:
         temperature_celsius:
           type: number
           example: -13.2
-        batch_timestamp:
+        reporting_timestamp:
           type: string
           format: date-time
           example: "2016-08-29T09:12:33.001Z"
-        reading_timestamp:
+        recorded_timestamp:
           type: string
           format: date-time
           example: "2016-08-29T09:12:33.001Z"

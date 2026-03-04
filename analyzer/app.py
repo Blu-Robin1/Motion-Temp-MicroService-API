@@ -1,9 +1,6 @@
-import datetime
 import json
 import connexion
 from connexion import NoContent
-import httpx
-import time
 import yaml
 import logging
 import logging.config
@@ -26,27 +23,30 @@ def get_temp_reading(index):
     client = KafkaClient(hosts=app_config["kafka"]["hostname"])
     topic = client.topics[app_config["kafka"]["topic"].encode()]
     consumer = topic.get_simple_consumer(
+        reset_offset_on_start=True,
         consumer_timeout_ms=1000
     )
-
+        
     counter = 0
 
     for msg in consumer:
         message = msg.value.decode("utf-8")
         data = json.loads(message)
-
         payload = data.get("payload",{})
-        if "temperature_report" in payload:
+
+        if data.get("type") == "temperature_report":
+            payload = data.get("payload", {})
+
             if counter == index:
                 logger.info("Sending temperature_reading")
-                return data, 200
+                return payload, 200
+
             counter += 1
-        
-# try the indix to see if its there
-#do client & 
-
-
-
+    
+    try:
+        consumer.stop()
+    except Exception:
+        pass
 
     logger.info("Temperature reading not found")
     return {"message": f"No temperature event at index {index}!"}, 404
@@ -63,16 +63,26 @@ def get_motion_reading(index):
     counter = 0
 
     for msg in consumer:
-        if counter == index:
-            message = msg.value.decode("utf-8")
-            data = json.loads(message)
+        message = msg.value.decode("utf-8")
+        data = json.loads(message)
+        payload = data.get("payload",{})
 
-            logger.info("Sending motion_reading")
-            return data, 200
+        if data.get("type") == "motion_report":
+            payload = data.get("payload", {})
 
-        counter += 1
+            if counter == index:
+                logger.info("Sending motion_reading")
+                return payload, 200
 
-    return {"message": f"No event at index {index}!"}, 404
+            counter += 1
+    
+    try:
+        consumer.stop()
+    except Exception:
+        pass
+
+    logger.info("Motion reading not found")
+    return {"message": f"No Motion event at index {index}!"}, 404
 
 
 
@@ -83,6 +93,7 @@ def get_reading_stats():
     client = KafkaClient(hosts=app_config["kafka"]["hostname"])
     topic = client.topics[app_config["kafka"]["topic"].encode()]
     consumer = topic.get_simple_consumer(
+        reset_offset_on_start=True,
         consumer_timeout_ms=1000
     )
 
@@ -93,9 +104,9 @@ def get_reading_stats():
         message = msg.value.decode("utf-8")
         data = json.loads(message)
 
-        if "temperature_celsius" in data:
+        if data.get("type") == "temperature_report":
             num_temp += 1
-        elif "animal_speed" in data:
+        elif data.get("type") == "motion_report":
             num_motion += 1
 
     stats = {
@@ -117,4 +128,4 @@ app.add_api(
 application = app.app
 
 if __name__ == "__main__":
-    app.run(port=8020)
+    app.run(port=8025)

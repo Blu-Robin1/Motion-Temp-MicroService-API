@@ -65,3 +65,87 @@
 2026-03-03 20:51:23,413 - basicLogger - INFO - Temperature reading not found
 2026-03-03 20:51:53,037 - basicLogger - INFO - Get request for stats
 2026-03-03 20:51:54,146 - basicLogger - INFO - Sending stats
+2026-03-03 21:09:44,423 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:09:45,544 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:10:09,891 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:10:12,005 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:10:14,667 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:10:17,023 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:10:23,289 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:10:24,413 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:11:45,557 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:11:46,692 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:11:50,699 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:11:51,826 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:12:08,078 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:12:09,214 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:12:14,695 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:12:15,826 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:18:43,833 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:18:44,982 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:18:49,408 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:18:50,586 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:19:40,923 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:19:42,088 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:19:55,803 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:19:56,950 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:20:02,211 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:20:03,335 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:20:52,444 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:20:53,580 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:20:59,832 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:21:00,958 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:21:05,590 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:21:06,722 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:21:23,797 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:21:24,925 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:21:30,406 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:21:31,550 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:22:22,400 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:22:23,541 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:23:11,878 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:23:13,025 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:23:18,213 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:23:19,352 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:23:41,443 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:23:42,593 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:26:12,740 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:26:13,915 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:27:30,350 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:27:31,474 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:31:54,129 - basicLogger - INFO - Get request for stats
+2026-03-03 21:31:55,331 - basicLogger - INFO - Sending stats
+2026-03-03 21:33:54,587 - basicLogger - INFO - Get request for stats
+2026-03-03 21:33:55,734 - basicLogger - INFO - Sending stats
+2026-03-03 21:33:56,316 - basicLogger - INFO - Get request for stats
+2026-03-03 21:33:57,460 - basicLogger - INFO - Sending stats
+2026-03-03 21:36:09,937 - basicLogger - INFO - Get request for stats
+2026-03-03 21:36:11,068 - basicLogger - INFO - Sending stats
+2026-03-03 21:36:14,755 - basicLogger - INFO - Get request for stats
+2026-03-03 21:36:15,899 - basicLogger - INFO - Sending stats
+2026-03-03 21:36:31,938 - basicLogger - INFO - Get request for stats
+2026-03-03 21:36:33,067 - basicLogger - INFO - Sending stats
+2026-03-03 21:36:41,210 - basicLogger - INFO - Get request for stats
+2026-03-03 21:36:42,356 - basicLogger - INFO - Sending stats
+2026-03-03 21:41:43,460 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:41:44,599 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:42:01,874 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:42:03,021 - basicLogger - INFO - Temperature reading not found
+2026-03-03 21:47:31,672 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:47:31,699 - basicLogger - INFO - Sending temperature_reading
+2026-03-03 21:47:40,712 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 21:47:40,749 - basicLogger - INFO - Sending temperature_reading
+2026-03-03 21:49:50,039 - basicLogger - INFO - Get request for stats
+2026-03-03 21:49:51,233 - basicLogger - INFO - Sending stats
+2026-03-03 22:05:19,535 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 22:05:19,563 - basicLogger - INFO - Sending temperature_reading
+2026-03-03 22:06:45,648 - basicLogger - INFO - Get request for temperature_reading
+2026-03-03 22:06:46,781 - basicLogger - INFO - Temperature reading not found
+2026-03-03 22:07:02,072 - basicLogger - INFO - Get request for stats
+2026-03-03 22:07:03,213 - basicLogger - INFO - Sending stats
+2026-03-03 22:22:25,109 - basicLogger - INFO - Get request for motion_reading
+2026-03-03 22:22:25,148 - basicLogger - INFO - Sending motion_reading
+2026-03-03 22:22:33,626 - basicLogger - INFO - Get request for stats
+2026-03-03 22:22:34,772 - basicLogger - INFO - Sending stats
+2026-03-03 22:27:10,845 - basicLogger - INFO - Get request for stats
+2026-03-03 22:27:11,995 - basicLogger - INFO - Sending stats
