@@ -3222,3 +3222,1023 @@
 2026-03-02 17:41:46,229 - basicLogger - ERROR - Motion GET request failed with status 500
 2026-03-02 17:41:46,229 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 26821, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
 2026-03-02 17:41:46,229 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:14:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:14:56,265 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-03-03 20:14:56,321 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-03-03 20:14:56,323 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 26821, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:14:56,323 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:15:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:15:11,190 - basicLogger - ERROR - Temperature GET request failed with status 500
+2026-03-03 20:15:11,223 - basicLogger - ERROR - Motion GET request failed with status 500
+2026-03-03 20:15:11,224 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 26821, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:15:11,225 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:15:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:15:26,542 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:15:26,623 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:15:26,624 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 26923, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:15:26,624 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:15:41,154 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:15:41,202 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:15:41,261 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:15:41,263 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27025, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:15:41,263 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:15:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:15:56,211 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:15:56,281 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:15:56,282 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27127, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:15:56,282 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:16:11,154 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:16:11,199 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:16:11,287 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:16:11,290 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27229, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:16:11,291 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:16:26,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:16:26,205 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:16:26,262 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:16:26,263 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27331, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 27946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:16:26,263 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:16:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:16:41,207 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:16:41,269 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:16:41,270 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27433, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:16:41,270 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:16:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:16:56,205 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:16:56,266 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:16:56,267 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27535, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:16:56,267 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:17:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:17:11,201 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:17:11,262 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:17:11,263 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27637, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:17:11,264 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:17:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:17:26,194 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:17:26,244 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:17:26,245 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27739, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:17:26,245 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:17:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:17:41,202 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:17:41,259 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:17:41,260 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27841, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:17:41,260 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:17:56,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:17:56,205 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:17:56,267 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:17:56,268 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 27943, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:17:56,269 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:18:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:18:11,204 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:18:11,269 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:18:11,270 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28045, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:18:11,271 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:18:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:18:26,202 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:18:26,259 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:18:26,260 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28147, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:18:26,260 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:18:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:18:41,202 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:18:41,256 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:18:41,257 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28249, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:18:41,257 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:18:56,154 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:18:56,204 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:18:56,261 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:18:56,262 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28351, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 28946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:18:56,263 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:19:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:19:11,174 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:19:11,191 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:19:11,192 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28453, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:19:11,192 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:19:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:19:26,175 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:19:26,196 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:19:26,196 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28555, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:19:26,196 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:19:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:19:41,173 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:19:41,221 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:19:41,222 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28657, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:19:41,222 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:19:56,154 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:19:56,176 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:19:56,202 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:19:56,203 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28759, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:19:56,203 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:20:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:20:11,176 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:20:11,194 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:20:11,195 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28861, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:20:11,195 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:20:26,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:20:26,193 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:20:26,237 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:20:26,238 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 28963, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:20:26,238 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:20:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:20:41,174 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:20:41,191 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:20:41,192 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29065, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:20:41,192 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:20:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:20:56,173 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:20:56,192 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:20:56,193 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29167, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:20:56,193 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:21:11,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:21:11,197 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:21:11,219 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:21:11,220 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29269, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:21:11,220 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:21:26,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:21:26,196 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:21:26,235 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:21:26,235 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29371, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 29946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:21:26,235 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:21:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:21:41,191 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:21:41,219 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:21:41,220 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29473, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:21:41,220 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:21:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:21:56,180 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:21:56,209 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:21:56,209 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29575, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:21:56,210 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:22:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:22:11,204 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:22:11,241 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:22:11,241 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29677, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:22:11,241 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:22:26,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:22:26,177 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:22:26,195 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:22:26,195 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29779, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:22:26,195 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:22:41,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:22:41,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:22:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:22:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29881, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:22:41,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:22:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:22:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:22:56,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:22:56,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 29983, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:22:56,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:23:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:23:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:23:11,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:23:11,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30085, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:23:11,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:23:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:23:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:23:26,182 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:23:26,183 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30187, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:23:26,183 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:23:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:23:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:23:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:23:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30289, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:23:41,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:23:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:23:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:23:56,175 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:23:56,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30391, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 30946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:23:56,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:24:11,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:24:11,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:24:11,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:24:11,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30493, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:24:11,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:24:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:24:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:24:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:24:26,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30595, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:24:26,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:24:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:24:41,162 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:24:41,175 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:24:41,175 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30697, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:24:41,175 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:24:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:24:56,168 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:24:56,185 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:24:56,185 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30799, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:24:56,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:25:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:25:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:25:11,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:25:11,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 30901, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:25:11,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:25:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:25:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:25:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:25:26,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31003, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:25:26,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:25:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:25:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:25:41,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:25:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31105, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:25:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:25:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:25:56,172 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:25:56,194 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:25:56,195 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31207, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:25:56,195 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:26:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:26:11,174 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:26:11,187 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:26:11,187 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31309, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:26:11,187 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:26:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:26:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:26:26,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:26:26,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31411, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 31946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:26:26,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:26:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:26:41,162 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:26:41,175 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:26:41,175 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31513, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:26:41,175 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:26:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:26:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:26:56,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:26:56,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31615, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:26:56,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:27:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:27:11,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:27:11,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:27:11,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31717, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:27:11,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:27:26,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:27:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:27:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:27:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31819, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:27:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:27:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:27:41,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:27:41,183 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:27:41,184 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 31921, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:27:41,184 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:27:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:27:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:27:56,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:27:56,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32023, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:27:56,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:28:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:28:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:28:11,175 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:28:11,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32125, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:28:11,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:28:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:28:26,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:28:26,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:28:26,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32227, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:28:26,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:28:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:28:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:28:41,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:28:41,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32329, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:28:41,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:28:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:28:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:28:56,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:28:56,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32431, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 32946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:28:56,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:29:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:29:11,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:29:11,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:29:11,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32533, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:29:11,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:29:26,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:29:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:29:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:29:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32635, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:29:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:29:41,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:29:41,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:29:41,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:29:41,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32737, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:29:41,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:29:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:29:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:29:56,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:29:56,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32839, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:29:56,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:30:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:30:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:30:11,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:30:11,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 32941, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:30:11,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:30:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:30:26,172 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:30:26,202 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:30:26,203 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33043, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:30:26,203 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:30:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:30:41,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:30:41,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:30:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33145, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:30:41,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:30:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:30:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:30:56,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:30:56,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33247, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:30:56,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:31:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:31:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:31:11,175 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:31:11,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33349, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:31:11,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:31:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:31:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:31:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:31:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33451, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 33946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:31:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:31:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:31:41,181 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:31:41,207 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:31:41,207 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33553, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:31:41,208 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:31:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:31:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:31:56,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:31:56,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33655, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:31:56,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:32:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:32:11,172 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:32:11,188 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:32:11,189 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33757, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:32:11,189 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:32:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:32:26,179 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:32:26,206 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:32:26,207 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33859, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:32:26,207 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:32:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:32:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:32:41,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:32:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 33961, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:32:41,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:32:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:32:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:32:56,187 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:32:56,188 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34063, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:32:56,188 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:33:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:33:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:33:11,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:33:11,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34165, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:33:11,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:33:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:33:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:33:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:33:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34267, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:33:26,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:33:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:33:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:33:41,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:33:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34369, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:33:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:33:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:33:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:33:56,181 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:33:56,181 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34471, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 34946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:33:56,181 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:34:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:34:11,175 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:34:11,205 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:34:11,206 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34573, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:34:11,206 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:34:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:34:26,179 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:34:26,206 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:34:26,206 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34675, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:34:26,207 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:34:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:34:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:34:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:34:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34777, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:34:41,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:34:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:34:56,167 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:34:56,184 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:34:56,185 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34879, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:34:56,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:35:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:35:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:35:11,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:35:11,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 34981, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:35:11,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:35:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:35:26,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:35:26,185 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:35:26,185 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35083, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:35:26,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:35:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:35:41,176 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:35:41,201 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:35:41,202 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35185, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:35:41,202 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:35:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:35:56,170 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:35:56,190 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:35:56,190 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35287, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:35:56,190 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:36:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:36:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:36:11,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:36:11,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35389, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:36:11,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:36:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:36:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:36:26,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:36:26,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35491, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 35946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:36:26,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:36:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:36:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:36:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:36:41,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35593, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:36:41,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:36:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:36:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:36:56,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:36:56,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35695, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:36:56,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:37:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:37:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:37:11,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:37:11,181 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35797, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:37:11,181 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:37:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:37:26,182 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:37:26,225 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:37:26,227 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 35899, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:37:26,227 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:37:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:37:41,169 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:37:41,211 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:37:41,211 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36001, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:37:41,212 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:37:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:37:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:37:56,199 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:37:56,199 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36103, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:37:56,199 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:38:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:38:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:38:11,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:38:11,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36205, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:38:11,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:38:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:38:26,170 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:38:26,194 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:38:26,194 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36307, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:38:26,194 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:38:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:38:41,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:38:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:38:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36409, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:38:41,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:38:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:38:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:38:56,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:38:56,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36511, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 36946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:38:56,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:39:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:39:11,168 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:39:11,181 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:39:11,182 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36613, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:39:11,182 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:39:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:39:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:39:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:39:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36715, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:39:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:39:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:39:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:39:41,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:39:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36817, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:39:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:39:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:39:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:39:56,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:39:56,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 36919, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:39:56,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:40:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:40:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:40:11,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:40:11,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37021, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:40:11,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:40:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:40:26,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:40:26,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:40:26,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37123, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:40:26,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:40:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:40:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:40:41,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:40:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37225, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:40:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:40:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:40:56,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:40:56,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:40:56,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37327, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:40:56,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:41:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:41:11,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:41:11,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:41:11,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37429, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:41:11,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:41:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:41:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:41:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:41:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37531, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 37946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:41:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:41:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:41:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:41:41,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:41:41,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37633, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:41:41,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:41:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:41:56,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:41:56,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:41:56,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37735, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:41:56,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:42:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:42:11,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:42:11,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:42:11,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37837, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:42:11,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:42:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:42:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:42:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:42:26,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 37939, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:42:26,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:42:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:42:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:42:41,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:42:41,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38041, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:42:41,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:42:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:42:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:42:56,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:42:56,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38143, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:42:56,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:43:11,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:43:11,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:43:11,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:43:11,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38245, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:43:11,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:43:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:43:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:43:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:43:26,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38347, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:43:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:43:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:43:41,173 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:43:41,208 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:43:41,209 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38449, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:43:41,209 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:43:56,153 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:43:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:43:56,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:43:56,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38551, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 38946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:43:56,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:44:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:44:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:44:11,175 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:44:11,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38653, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:44:11,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:44:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:44:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:44:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:44:26,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38755, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:44:26,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:44:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:44:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:44:41,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:44:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38857, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:44:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:44:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:44:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:44:56,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:44:56,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 38959, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:44:56,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:45:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:45:11,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:45:11,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:45:11,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39061, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:45:11,181 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:45:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:45:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:45:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:45:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39163, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:45:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:45:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:45:41,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:45:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:45:41,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39265, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:45:41,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:45:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:45:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:45:56,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:45:56,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39367, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:45:56,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:46:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:46:11,183 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:46:11,218 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:46:11,219 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39469, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:46:11,219 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:46:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:46:26,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:46:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:46:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39571, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 39946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:46:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:46:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:46:41,169 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:46:41,185 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:46:41,185 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39673, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:46:41,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:46:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:46:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:46:56,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:46:56,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39775, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:46:56,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:47:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:47:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:47:11,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:47:11,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39877, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:47:11,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:47:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:47:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:47:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:47:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 39979, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:47:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:47:41,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:47:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:47:41,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:47:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40081, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:47:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:47:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:47:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:47:56,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:47:56,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40183, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:47:56,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:48:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:48:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:48:11,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:48:11,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40285, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:48:11,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:48:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:48:26,167 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:48:26,183 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:48:26,184 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40387, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:48:26,184 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:48:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:48:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:48:41,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:48:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40489, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:48:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:48:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:48:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:48:56,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:48:56,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40591, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 40946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:48:56,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:49:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:49:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:49:11,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:49:11,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40693, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:49:11,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:49:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:49:26,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:49:26,184 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:49:26,185 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40795, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:49:26,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:49:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:49:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:49:41,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:49:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40897, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:49:41,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:49:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:49:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:49:56,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:49:56,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 40999, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:49:56,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:50:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:50:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:50:11,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:50:11,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41101, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:50:11,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:50:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:50:26,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:50:26,184 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:50:26,185 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41203, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:50:26,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:50:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:50:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:50:41,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:50:41,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41305, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:50:41,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:50:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:50:56,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:50:56,183 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:50:56,183 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41407, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:50:56,183 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:51:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:51:11,168 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:51:11,186 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:51:11,186 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41509, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:51:11,186 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:51:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:51:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:51:26,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:51:26,176 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41611, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 41946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:51:26,176 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:51:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:51:41,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:51:41,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:51:41,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41713, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:51:41,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:51:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:51:56,179 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:51:56,208 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:51:56,209 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41815, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:51:56,209 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:52:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:52:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:52:11,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:52:11,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 41917, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:52:11,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:52:26,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:52:26,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:52:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:52:26,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42019, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:52:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:52:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:52:41,162 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:52:41,175 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:52:41,175 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42121, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:52:41,175 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:52:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:52:56,167 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:52:56,192 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:52:56,193 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42223, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:52:56,193 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:53:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:53:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:53:11,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:53:11,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42325, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:53:11,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:53:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:53:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:53:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:53:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42427, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:53:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:53:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:53:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:53:41,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:53:41,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42529, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:53:41,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:53:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:53:56,186 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:53:56,219 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:53:56,221 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42631, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 42946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:53:56,221 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:54:11,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:54:11,179 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:54:11,213 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:54:11,214 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42733, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:54:11,214 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:54:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:54:26,175 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:54:26,205 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:54:26,206 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42835, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:54:26,206 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:54:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:54:41,184 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:54:41,221 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:54:41,222 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 42937, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:54:41,222 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:54:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:54:56,178 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:54:56,208 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:54:56,208 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43039, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:54:56,208 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:55:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:55:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:55:11,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:55:11,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43141, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:55:11,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:55:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:55:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:55:26,179 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:55:26,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43243, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:55:26,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:55:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:55:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:55:41,181 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:55:41,182 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43345, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:55:41,182 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:55:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:55:56,171 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:55:56,188 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:55:56,189 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43447, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:55:56,189 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:56:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:56:11,168 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:56:11,187 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:56:11,187 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43549, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:56:11,187 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:56:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:56:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:56:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:56:26,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43651, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 43946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:56:26,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:56:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:56:41,181 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:56:41,216 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:56:41,217 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43753, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:56:41,217 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:56:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:56:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:56:56,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:56:56,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43855, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:56:56,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:57:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:57:11,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:57:11,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:57:11,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 43957, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:57:11,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:57:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:57:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:57:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:57:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44059, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:57:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:57:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:57:41,168 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:57:41,184 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:57:41,184 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44161, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:57:41,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:57:56,152 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:57:56,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:57:56,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:57:56,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44263, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:57:56,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:58:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:58:11,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:58:11,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:58:11,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44365, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:58:11,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:58:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:58:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:58:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:58:26,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44467, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:58:26,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:58:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:58:41,165 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:58:41,184 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:58:41,184 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44569, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:58:41,184 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:58:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:58:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:58:56,180 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:58:56,180 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44671, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 44946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:58:56,180 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:59:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:59:11,167 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:59:11,184 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:59:11,184 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44773, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:59:11,184 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:59:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:59:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:59:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:59:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44875, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:59:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:59:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:59:41,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:59:41,181 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:59:41,181 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 44977, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:59:41,182 - basicLogger - INFO - Periodic processing ended
+2026-03-03 20:59:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 20:59:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 20:59:56,182 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 20:59:56,182 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45079, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 20:59:56,182 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:00:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:00:11,180 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:00:11,203 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:00:11,203 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45181, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:00:11,204 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:00:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:00:26,171 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:00:26,197 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:00:26,198 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45283, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:00:26,198 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:00:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:00:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:00:41,182 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:00:41,183 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45385, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:00:41,183 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:00:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:00:56,177 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:00:56,205 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:00:56,205 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45487, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:00:56,205 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:01:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:01:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:01:11,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:01:11,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45589, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:01:11,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:01:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:01:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:01:26,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:01:26,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45691, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 45946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:01:26,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:01:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:01:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:01:41,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:01:41,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45793, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:01:41,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:01:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:01:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:01:56,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:01:56,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45895, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:01:56,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:02:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:02:11,162 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:02:11,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:02:11,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 45997, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:02:11,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:02:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:02:26,162 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:02:26,176 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:02:26,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46099, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:02:26,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:02:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:02:41,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:02:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:02:41,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46201, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:02:41,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:02:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:02:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:02:56,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:02:56,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46303, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:02:56,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:03:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:03:11,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:03:11,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:03:11,177 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46405, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:03:11,177 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:03:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:03:26,192 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:03:26,205 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:03:26,206 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46507, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46746, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:03:26,206 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:03:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:03:41,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:03:41,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:03:41,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46609, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46846, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:03:41,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:03:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:03:56,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:03:56,177 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:03:56,178 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46711, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 46946, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:03:56,178 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:04:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:04:11,168 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:04:11,191 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:04:11,192 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46813, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 47046, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:04:11,192 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:04:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:04:26,163 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:04:26,178 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:04:26,179 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 46915, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 47146, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:04:26,179 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:04:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:04:41,177 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:04:41,203 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:04:41,204 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 47017, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 47246, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:04:41,205 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:04:56,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:04:56,164 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:04:56,182 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:04:56,182 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 47119, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 47346, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:04:56,182 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:05:11,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:05:11,171 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:05:11,185 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:05:11,185 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 47221, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 47446, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:05:11,185 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:05:26,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:05:26,186 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:05:26,225 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:05:26,226 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 47323, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 47546, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:05:26,226 - basicLogger - INFO - Periodic processing ended
+2026-03-03 21:05:41,151 - basicLogger - INFO - Periodic processing started
+2026-03-03 21:05:41,166 - basicLogger - INFO - Received 102 new temperature events
+2026-03-03 21:05:41,186 - basicLogger - INFO - Received 100 new motion events
+2026-03-03 21:05:41,187 - basicLogger - DEBUG - Updated statistics: {'temperature': {'num_temp_readings': 47425, 'min_temp_celcius': -30.0, 'max_temp_celcius': 50.0, 'last_updated': '2026-02-18T09:42:46'}, 'motion': {'num_motion_readings': 47646, 'min_animal_speed': 0, 'max_animal_speed': 20, 'last_updated': '2026-02-18T09:43:11'}}
+2026-03-03 21:05:41,187 - basicLogger - INFO - Periodic processing ended

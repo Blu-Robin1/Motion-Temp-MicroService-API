@@ -21,27 +21,35 @@ with open('app_conf.yml', 'r') as f:
 
 def get_temp_reading(index):
 
-    logger.info(f"Get request for temperature_reading")
+    logger.info("Get request for temperature_reading")
 
     client = KafkaClient(hosts=app_config["kafka"]["hostname"])
     topic = client.topics[app_config["kafka"]["topic"].encode()]
-    consumer = topic.get_simple_consumer(reset_offset_on_start=True, consumer_timeout_ms=1000)
-    
+    consumer = topic.get_simple_consumer(
+        consumer_timeout_ms=1000
+    )
+
     counter = 0
-    
+
     for msg in consumer:
         message = msg.value.decode("utf-8")
         data = json.loads(message)
-        # Look for the index requested and return the payload with 200 status code
 
-        if index in data:
-            return {"index_requested": data[index]}, 200
+        payload = data.get("payload",{})
+        if "temperature_report" in payload:
+            if counter == index:
+                logger.info("Sending temperature_reading")
+                return data, 200
+            counter += 1
+        
+# try the indix to see if its there
+#do client & 
 
-        counter+=1
 
-    logger.info("Sending temperature_reading")
 
-    return { "message": f"No event at index {index}!"}, 404
+
+    logger.info("Temperature reading not found")
+    return {"message": f"No temperature event at index {index}!"}, 404
 
 
 def get_motion_reading(index):
@@ -59,7 +67,7 @@ def get_motion_reading(index):
             message = msg.value.decode("utf-8")
             data = json.loads(message)
 
-            logger.info("Sending temperature_reading")
+            logger.info("Sending motion_reading")
             return data, 200
 
         counter += 1
@@ -75,7 +83,6 @@ def get_reading_stats():
     client = KafkaClient(hosts=app_config["kafka"]["hostname"])
     topic = client.topics[app_config["kafka"]["topic"].encode()]
     consumer = topic.get_simple_consumer(
-        reset_offset_on_start=True,
         consumer_timeout_ms=1000
     )
 
