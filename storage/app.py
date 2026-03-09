@@ -183,4 +183,4 @@ application = app.app
 
 if __name__=="__main__":
     setup_kafka_thread()
-    app.run(port=8090)
+    app.run(port=8090, host="0.0.0.0")

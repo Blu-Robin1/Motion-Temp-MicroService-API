@@ -2,6 +2,6 @@ version: 1
 stats_file_name:
   name: stats.json
 storage_url:
-  url: http://localhost:8090
+  url: http://storage:8090
 scheduler:
   interval: 15

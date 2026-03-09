@@ -6,6 +6,6 @@
 
 version: 2
 events:
-    hostname: localhost
-    port: 9092
+    hostname: kafka 
+    port: 29092
     topic: events
