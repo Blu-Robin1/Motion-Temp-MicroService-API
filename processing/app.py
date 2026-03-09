@@ -58,20 +58,20 @@ def populate_stats():
         stats = {
             "temperature": {
                 "num_temp_readings": 0,
-                "min_temp_celcius": 0,
-                "max_temp_celcius": 0,
+                "min_temp_celcius": None,
+                "max_temp_celcius": None,
                 "last_updated": "2025-01-01T00:00:00Z"
             },
             "motion": {
                 "num_motion_readings": 0,
-                "min_animal_speed": 0,
-                "max_animal_speed": 0,
+                "min_animal_speed": None,
+                "max_animal_speed": None,
                 "last_updated": "2025-01-01T00:00:00Z"
             }
         }
 
-    now = datetime.utcnow().isoformat() + "Z"
-
+    now = datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+    
     temp_start = stats["temperature"]["last_updated"]
     temp_resp = requests.get(
         f"{STORAGE_URL}/motiontemp/temperature",
@@ -109,8 +109,7 @@ def populate_stats():
             max(temp_values) if stats["temperature"]["max_temp_celcius"] is None
             else max(stats["temperature"]["max_temp_celcius"], max(temp_values))
         )
-        stats["temperature"]["last_updated"] = max([t["recorded_timestamp"] for t in new_temps])
-
+        stats["temperature"]["last_updated"] = now
     speeds = [m["animal_speed"] for m in new_motion]
     if speeds:
         stats["motion"]["num_motion_readings"] += len(speeds)
@@ -122,8 +121,8 @@ def populate_stats():
             max(speeds) if stats["motion"]["max_animal_speed"] is None
             else max(stats["motion"]["max_animal_speed"], max(speeds))
         )
-        stats["motion"]["last_updated"] = max([m["recorded_timestamp"] for m in new_motion])
-
+        stats["motion"]["last_updated"] = now
+        
     with open(STATS_FILE, 'w') as f:
         json.dump(stats, f, indent=2)
 

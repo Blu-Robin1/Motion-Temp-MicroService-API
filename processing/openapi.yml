@@ -45,10 +45,10 @@ components:
           type: integer
           example: 500000
         min_temp_celcius:
-          type: integer
+          type: number
           example: -60
         max_temp_celcius:
-          type: integer
+          type: number
           example: 60
       type: object
 

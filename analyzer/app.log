@@ -149,3 +149,115 @@
 2026-03-03 22:22:34,772 - basicLogger - INFO - Sending stats
 2026-03-03 22:27:10,845 - basicLogger - INFO - Get request for stats
 2026-03-03 22:27:11,995 - basicLogger - INFO - Sending stats
+2026-03-04 09:43:41,863 - basicLogger - INFO - Get request for temperature_reading
+2026-03-04 09:43:42,885 - basicLogger - INFO - Temperature reading not found
+2026-03-04 09:43:48,673 - basicLogger - INFO - Get request for temperature_reading
+2026-03-04 09:43:49,692 - basicLogger - INFO - Temperature reading not found
+2026-03-04 09:45:25,476 - basicLogger - INFO - Get request for temperature_reading
+2026-03-04 09:45:25,488 - basicLogger - INFO - Sending temperature_reading
+2026-03-04 09:49:47,836 - basicLogger - INFO - Get request for temperature_reading
+2026-03-04 09:49:47,851 - basicLogger - INFO - Sending temperature_reading
+2026-03-04 09:50:01,452 - basicLogger - INFO - Get request for motion_reading
+2026-03-04 09:50:02,464 - basicLogger - INFO - Motion reading not found
+2026-03-04 09:50:13,244 - basicLogger - INFO - Get request for stats
+2026-03-04 09:50:14,260 - basicLogger - INFO - Sending stats
+2026-03-04 09:51:38,718 - basicLogger - INFO - Get request for stats
+2026-03-04 09:51:40,748 - basicLogger - INFO - Sending stats
+2026-03-04 09:58:50,891 - basicLogger - INFO - Get request for stats
+2026-03-04 09:58:51,919 - basicLogger - INFO - Sending stats
+2026-03-04 09:59:23,459 - basicLogger - INFO - Get request for stats
+2026-03-04 09:59:24,501 - basicLogger - INFO - Sending stats
+2026-03-04 09:59:40,731 - basicLogger - INFO - Get request for stats
+2026-03-04 09:59:41,771 - basicLogger - INFO - Sending stats
+2026-03-04 09:59:43,492 - basicLogger - INFO - Get request for stats
+2026-03-04 09:59:44,525 - basicLogger - INFO - Sending stats
+2026-03-04 09:59:45,733 - basicLogger - INFO - Get request for stats
+2026-03-04 09:59:46,764 - basicLogger - INFO - Sending stats
+2026-03-04 10:00:11,285 - basicLogger - INFO - Get request for stats
+2026-03-04 10:00:12,339 - basicLogger - INFO - Sending stats
+2026-03-04 10:01:25,130 - basicLogger - INFO - Get request for stats
+2026-03-04 10:01:26,194 - basicLogger - INFO - Sending stats
+2026-03-04 10:01:28,530 - basicLogger - INFO - Get request for stats
+2026-03-04 10:01:29,598 - basicLogger - INFO - Sending stats
+2026-03-04 10:01:56,290 - basicLogger - INFO - Get request for stats
+2026-03-04 10:01:57,626 - basicLogger - INFO - Sending stats
+2026-03-04 10:03:46,099 - basicLogger - INFO - Get request for stats
+2026-03-04 10:03:47,112 - basicLogger - INFO - Sending stats
+2026-03-04 10:04:18,279 - basicLogger - INFO - Get request for stats
+2026-03-04 10:04:20,509 - basicLogger - INFO - Sending stats
+2026-03-04 10:04:40,729 - basicLogger - INFO - Get request for stats
+2026-03-04 10:04:41,752 - basicLogger - INFO - Sending stats
+2026-03-04 10:04:54,390 - basicLogger - INFO - Get request for stats
+2026-03-04 10:04:55,604 - basicLogger - INFO - Sending stats
+2026-03-04 10:04:56,632 - basicLogger - INFO - Get request for stats
+2026-03-04 10:04:57,656 - basicLogger - INFO - Sending stats
+2026-03-04 10:05:08,375 - basicLogger - INFO - Get request for stats
+2026-03-04 10:05:10,657 - basicLogger - INFO - Sending stats
+2026-03-04 10:05:14,011 - basicLogger - INFO - Get request for stats
+2026-03-04 10:05:15,672 - basicLogger - INFO - Sending stats
+2026-03-04 10:05:16,873 - basicLogger - INFO - Get request for stats
+2026-03-04 10:05:17,896 - basicLogger - INFO - Sending stats
+2026-03-04 10:05:26,767 - basicLogger - INFO - Get request for stats
+2026-03-04 10:05:27,799 - basicLogger - INFO - Sending stats
+2026-03-04 10:05:40,457 - basicLogger - INFO - Get request for stats
+2026-03-04 10:05:41,489 - basicLogger - INFO - Sending stats
+2026-03-04 10:05:42,453 - basicLogger - INFO - Get request for stats
+2026-03-04 10:05:43,479 - basicLogger - INFO - Sending stats
+2026-03-04 10:05:58,788 - basicLogger - INFO - Get request for stats
+2026-03-04 10:05:59,819 - basicLogger - INFO - Sending stats
+2026-03-04 10:06:01,082 - basicLogger - INFO - Get request for stats
+2026-03-04 10:06:02,112 - basicLogger - INFO - Sending stats
+2026-03-04 10:06:20,932 - basicLogger - INFO - Get request for stats
+2026-03-04 10:06:21,981 - basicLogger - INFO - Sending stats
+2026-03-04 10:12:29,828 - basicLogger - INFO - Get request for stats
+2026-03-04 10:12:30,857 - basicLogger - INFO - Sending stats
+2026-03-04 10:12:49,002 - basicLogger - INFO - Get request for stats
+2026-03-04 10:12:50,120 - basicLogger - INFO - Sending stats
+2026-03-04 10:12:55,024 - basicLogger - INFO - Get request for stats
+2026-03-04 10:12:56,056 - basicLogger - INFO - Sending stats
+2026-03-04 10:13:01,821 - basicLogger - INFO - Get request for stats
+2026-03-04 10:13:02,860 - basicLogger - INFO - Sending stats
+2026-03-04 10:13:09,345 - basicLogger - INFO - Get request for stats
+2026-03-04 10:13:10,380 - basicLogger - INFO - Sending stats
+2026-03-04 10:13:11,364 - basicLogger - INFO - Get request for stats
+2026-03-04 10:13:12,400 - basicLogger - INFO - Sending stats
+2026-03-04 10:13:18,862 - basicLogger - INFO - Get request for stats
+2026-03-04 10:13:20,202 - basicLogger - INFO - Sending stats
+2026-03-04 10:24:12,130 - basicLogger - INFO - Get request for stats
+2026-03-04 10:24:13,192 - basicLogger - INFO - Sending stats
+2026-03-04 10:24:14,132 - basicLogger - INFO - Get request for stats
+2026-03-04 10:24:15,193 - basicLogger - INFO - Sending stats
+2026-03-04 10:24:15,824 - basicLogger - INFO - Get request for stats
+2026-03-04 10:24:16,889 - basicLogger - INFO - Sending stats
+2026-03-04 10:24:43,200 - basicLogger - INFO - Get request for stats
+2026-03-04 10:24:44,519 - basicLogger - INFO - Sending stats
+2026-03-04 10:25:21,292 - basicLogger - INFO - Get request for stats
+2026-03-04 10:25:22,367 - basicLogger - INFO - Sending stats
+2026-03-04 10:25:35,698 - basicLogger - INFO - Get request for stats
+2026-03-04 10:25:37,766 - basicLogger - INFO - Sending stats
+2026-03-04 10:26:37,607 - basicLogger - INFO - Get request for stats
+2026-03-04 10:26:39,151 - basicLogger - INFO - Sending stats
+2026-03-04 10:26:40,143 - basicLogger - INFO - Get request for stats
+2026-03-04 10:26:41,197 - basicLogger - INFO - Sending stats
+2026-03-04 10:26:42,157 - basicLogger - INFO - Get request for stats
+2026-03-04 10:26:44,253 - basicLogger - INFO - Sending stats
+2026-03-04 10:28:08,902 - basicLogger - INFO - Get request for stats
+2026-03-04 10:28:09,980 - basicLogger - INFO - Sending stats
+2026-03-04 10:41:17,721 - basicLogger - INFO - Get request for stats
+2026-03-04 10:41:18,741 - basicLogger - INFO - Sending stats
+2026-03-04 10:41:25,661 - basicLogger - INFO - Get request for stats
+2026-03-04 10:41:26,710 - basicLogger - INFO - Sending stats
+2026-03-04 10:41:32,811 - basicLogger - INFO - Get request for stats
+2026-03-04 10:41:33,835 - basicLogger - INFO - Sending stats
+2026-03-04 10:41:39,098 - basicLogger - INFO - Get request for stats
+2026-03-04 10:41:41,022 - basicLogger - INFO - Sending stats
+2026-03-04 10:41:46,777 - basicLogger - INFO - Get request for stats
+2026-03-04 10:41:47,832 - basicLogger - INFO - Sending stats
+2026-03-04 10:41:54,005 - basicLogger - INFO - Get request for stats
+2026-03-04 10:41:56,391 - basicLogger - INFO - Sending stats
+2026-03-04 10:42:03,254 - basicLogger - INFO - Get request for stats
+2026-03-04 10:42:04,304 - basicLogger - INFO - Sending stats
+2026-03-04 10:42:19,111 - basicLogger - INFO - Get request for stats
+2026-03-04 10:42:21,855 - basicLogger - INFO - Sending stats
+2026-03-04 10:42:28,886 - basicLogger - INFO - Get request for stats
+2026-03-04 10:42:32,076 - basicLogger - INFO - Sending stats
