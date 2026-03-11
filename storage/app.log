@@ -4438,3 +4438,12 @@
 2026-03-04 10:43:05,182 - basicLogger - DEBUG - Found 0 motion readings (start: 2026-03-04 18:42:50+00:00, end: 2026-03-04 18:43:05+00:00)
 2026-03-04 10:43:20,148 - basicLogger - DEBUG - Found 0 temperature readings (start: 2026-03-04 18:42:20+00:00, end: 2026-03-04 18:43:20+00:00)
 2026-03-04 10:43:20,167 - basicLogger - DEBUG - Found 0 motion readings (start: 2026-03-04 18:42:50+00:00, end: 2026-03-04 18:43:20+00:00)
+2026-03-09 18:05:52,349 - basicLogger - INFO - Kafka consumer thread started.
+2026-03-09 19:53:00,230 - basicLogger - INFO - Kafka consumer thread started.
+2026-03-09 19:54:37,154 - basicLogger - INFO - Message: {'type': 'temperature_report', 'datetime': '2026-03-09T19:54:37', 'payload': {'station_id': '539bf232-6bba-4553-8c0f-1ccfd2ff5c7d', 'station_name': 'Churchill River Upland Ecoregion', 'temperature_celsius': -18, 'reporting_timestamp': '2019-01-29T09:01:33.001Z', 'recorded_timestamp': '2019-01-29T09:01:33.001Z', 'trace_id': 1773111277098358430}}
+2026-03-09 19:54:37,155 - basicLogger - INFO - Received event temperature_report with a trace id of 1773111277098358430
+2026-03-09 19:54:37,265 - basicLogger - DEBUG - Stored event temperature_report with a trace id of 1773111277098358430
+2026-03-09 19:54:43,240 - basicLogger - INFO - Message: {'type': 'temperature_report', 'datetime': '2026-03-09T19:54:43', 'payload': {'station_id': '539bf232-6bba-4553-8c0f-1ccfd2ff5c7d', 'station_name': 'Churchill River Upland Ecoregion', 'temperature_celsius': -18, 'reporting_timestamp': '2019-01-29T09:01:33.001Z', 'recorded_timestamp': '2019-01-29T09:01:33.001Z', 'trace_id': 1773111283226436870}}
+2026-03-09 19:54:43,240 - basicLogger - INFO - Received event temperature_report with a trace id of 1773111283226436870
+2026-03-09 19:54:43,260 - basicLogger - DEBUG - Stored event temperature_report with a trace id of 1773111283226436870
+2026-03-09 19:56:58,399 - basicLogger - DEBUG - Found 0 temperature readings (start: 2016-08-29 09:12:33.001000+00:00, end: 2016-08-29 09:12:33.001000+00:00)

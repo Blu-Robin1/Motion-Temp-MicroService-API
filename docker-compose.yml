@@ -1,16 +1,46 @@
 services:
   receiver:
-      build:
-          context: .
-          dockerfile: receiver/Dockerfile
-      ports:
-        - "8010:8010"
+    build:
+      context: .
+      dockerfile: receiver/Dockerfile
+    ports:
+      - "8010:8010"
+    depends_on:
+      kafka:
+        condition: service_healthy
   storage:
-      build:
-          context: .
-          dockerfile: storage/Dockerfile
-      ports:
-          - "8090:8090" 
+    build:
+      context: .
+      dockerfile: storage/Dockerfile
+    # ports:
+    #   - "8090:8090"
+    depends_on:
+          db:
+            condition: service_healthy
+          kafka:
+            condition: service_healthy
+  analyzer:
+    build:
+      context: .
+      dockerfile: analyzer/Dockerfile
+    ports:
+      - "8025:8025"
+    depends_on:
+          db:
+            condition: service_healthy
+          kafka:
+            condition: service_healthy
+  processing:
+    build:
+      context: .
+      dockerfile: processing/Dockerfile
+    ports:
+      - "8100:8100"
+    depends_on:
+          db:
+            condition: service_healthy
+          kafka:
+            condition: service_healthy
   zookeeper:
     image: wurstmeister/zookeeper
   kafka:
@@ -28,18 +58,28 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    healthcheck:
+      test: ["CMD-SHELL", "kafka-topics.sh --bootstrap-server kafka:29092 --list"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   db:
-     image: mysql:8.0
-     environment:
-       MYSQL_RANDOM_ROOT_PASSWORD: 1
-       MYSQL_USER: pyro
-       MYSQL_PASSWORD: cynical
-       MYSQL_DATABASE: slop
-     ports:
-       - "3306:3306"
-     volumes:
+    image: mysql:8.0
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
+      MYSQL_USER: pyro
+      MYSQL_PASSWORD: cynical
+      MYSQL_DATABASE: slop
+    ports:
+      - "3306:3306"
+    volumes:
         # Where our data will be persisted
         - my-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "pyro", "-p cynical"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   # Defines a named volume
 volumes:
   my-db:

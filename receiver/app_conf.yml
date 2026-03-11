@@ -9,3 +9,8 @@ events:
     hostname: kafka 
     port: 29092
     topic: events
+
+# events:
+#     hostname: localhost 
+#     port: 9092
+#     topic: events
