@@ -12,13 +12,13 @@ from pykafka import KafkaClient
 #send same topic for lab7
 #messages help it distinguis
 
-with open('log_conf.yml', 'r') as f:
+with open('receiver_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
 
-with open('app_conf.yml', 'r') as f:
+with open('receiver_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
 # TEMP_STORAGE_URL = app_config['temperature']['url']
