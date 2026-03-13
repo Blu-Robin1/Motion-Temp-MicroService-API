@@ -6,13 +6,13 @@ import logging
 import logging.config
 from pykafka import KafkaClient 
 
-with open('analyzer_log_config.yml', 'r') as f:
+with open('../config/analyzer_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
 
-with open('analyzer_config.yml', 'r') as f:
+with open('../config/analyzer_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
 

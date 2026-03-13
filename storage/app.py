@@ -13,7 +13,7 @@ from pykafka import KafkaClient
 from pykafka.common import OffsetType 
 
 
-with open('storage_config.yml', 'r') as f:
+with open('../config/storage_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
 
@@ -21,7 +21,7 @@ hosts=app_config['events']['hostname']
 port=app_config['events']['port']
 topic=app_config['events']['topic']
 
-with open('storage_log_config.yml', 'r') as f:
+with open('../config/storage_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 

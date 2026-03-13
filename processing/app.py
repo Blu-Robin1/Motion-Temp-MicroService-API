@@ -15,13 +15,13 @@ from pathlib import Path
 
 
 
-with open('processing_log_config.yml', 'r') as f:
+with open('../config/processing_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
 
-with open('processing_config.yml', 'r') as f:
+with open('../config/processing_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
 INTRAVEL = app_config['scheduler']['interval']
