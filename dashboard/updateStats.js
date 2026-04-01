@@ -24,13 +24,23 @@ const updateCodeDiv = (result, elemId) => document.getElementById(elemId).innerT
 
 const getLocaleDateStr = () => (new Date()).toLocaleString()
 
+let motionIndex = 0;
+
 const getStats = () => {
     document.getElementById("last-updated-value").innerText = getLocaleDateStr()
     
     makeReq(PROCESSING_STATS_API_URL, (result) => updateCodeDiv(result, "processing-stats"))
     makeReq(ANALYZER_API_URL.stats, (result) => updateCodeDiv(result, "analyzer-stats"))
-    makeReq(ANALYZER_API_URL.motion  + "?index=0", (result) => updateCodeDiv(result, "event-motion"))
-    makeReq(ANALYZER_API_URL.temperature  + "?index=0", (result) => updateCodeDiv(result, "event-temperature"))
+
+    motionIndex++;
+
+    makeReq(`${ANALYZER_API_URL.motion}?index=${motionIndex}`, (result) =>
+        updateCodeDiv(result, "event-motion")
+    )
+
+    makeReq(`${ANALYZER_API_URL.temperature}?index=${motionIndex}`, (result) =>
+        updateCodeDiv(result, "event-temperature")
+    )
 }
 
 const updateErrorMessages = (message) => {
