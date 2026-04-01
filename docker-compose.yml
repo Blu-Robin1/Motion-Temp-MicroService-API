@@ -57,6 +57,12 @@ services:
       - ./config:/config
       - ./logs:/logs
       - ./data/processing:/data
+  dashboard:
+    build:
+      context: .
+      dockerfile: dashboard/Dockerfile
+    ports:
+     - 80:80
   zookeeper:
     image: wurstmeister/zookeeper
     volumes:

@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
@@ -52,7 +50,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Animal" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Animal">
           <stringProp name="HTTPSampler.domain">127.0.0.1</stringProp>
           <stringProp name="HTTPSampler.port">8010</stringProp>
           <stringProp name="HTTPSampler.path">/motiontemp/motion</stringProp>

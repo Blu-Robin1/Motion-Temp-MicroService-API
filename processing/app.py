@@ -1,5 +1,7 @@
 from datetime import datetime
 import connexion
+from connexion.middleware import MiddlewarePosition
+from starlette.middleware.cors import CORSMiddleware
 import yaml
 import logging
 import logging.config
@@ -136,8 +138,16 @@ def init_scheduler(INTRAVEL):
     sched.add_job(populate_stats, 'interval', seconds=INTRAVEL)
     sched.start()
 
-
 app = connexion.FlaskApp(__name__, specification_dir='')
+app.add_middleware(
+    CORSMiddleware,
+    position=MiddlewarePosition.BEFORE_EXCEPTION,
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=['*'],
+    allow_headers=['*'],
+)
+
 app.add_api(
     "openapi.yml",
     strict_validation=True,
