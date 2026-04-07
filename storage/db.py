@@ -18,7 +18,7 @@ connection_string = (
     f"{db_hostname}:{db_port}/{db_name}"
 )
 
-ENGINE = create_engine(connection_string)
+ENGINE = create_engine(connection_string,pool_recycle=1800,pool_pre_ping=True,pool_size=10)
 Session = sessionmaker(bind=ENGINE)
 
 def make_session():
