@@ -1,34 +1,35 @@
 import datetime
-import json
+#import json
 import connexion
 from connexion import NoContent
-import httpx
 import time
 import yaml
 import logging
 import logging.config
-from pykafka import KafkaClient 
+#from pykafka import KafkaClient 
+from kafka_wrapper import KafkaWrapper
 
-#send same topic for lab7
-#messages help it distinguis
-
+# Configure logging FIRST
 with open('../config/receiver_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
-logger = logging.getLogger('basicLogger')
+logger = logging.getLogger(__name__)
 
+# Load app config
 with open('../config/receiver_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
-# TEMP_STORAGE_URL = app_config['temperature']['url']
-# MOTION_STORAGE_URL = app_config['motion']['url']
 
 
 hosts=app_config['events']['hostname']
 port=app_config['events']['port']
 topic_name=app_config['events']['topic']
 
+kafka_wrapper = KafkaWrapper(
+    f"{hosts}:{port}",
+    topic_name.encode("utf-8")
+)
 
 def report_temperature_readings(body):
     """
@@ -38,12 +39,12 @@ def report_temperature_readings(body):
     trace_id = time.time_ns() 
     logger.info(f"Received event temperature_report with a trace id of {trace_id}")
     
-    client = KafkaClient(f"{hosts}:{port}")
-    kafka_topic = client.topics[str.encode(topic_name)]
-    producer = kafka_topic.get_sync_producer()
+    #client = KafkaClient(f"{hosts}:{port}")
+    #kafka_topic = client.topics[str.encode(topic_name)]
+    #producer = kafka_topic.get_sync_producer()
 
-    for reading in body.get("readings", []):
-        reading['trace_id'] = trace_id
+    # for reading in body.get("readings", []):
+    #     reading['trace_id'] = trace_id
 
     last_status = 201
     
@@ -63,9 +64,9 @@ def report_temperature_readings(body):
                 "payload": data
             }
 
-        msg_str = json.dumps(msg)
-        producer.produce(msg_str.encode('utf-8'))
-
+        # msg_str = json.dumps(msg)
+        # producer.produce(msg_str.encode('utf-8'))
+        kafka_wrapper.produce(msg)
 
         logger.info("Sending temperature reading for event temperature_report (id: %s): %s",trace_id,data)
 
@@ -81,9 +82,9 @@ def report_motion_readings(body):
     trace_id = time.time_ns() 
     logger.info(f"Received event motion_report with a trace id of {trace_id}")
     
-    client = KafkaClient(f"{hosts}:{port}")
-    kafka_topic = client.topics[str.encode(topic_name)]
-    producer = kafka_topic.get_sync_producer()
+    # client = KafkaClient(f"{hosts}:{port}")
+    # kafka_topic = client.topics[str.encode(topic_name)]
+    # producer = kafka_topic.get_sync_producer()
     
     for reading in body.get("readings", []):
         reading['trace_id'] = trace_id
@@ -107,9 +108,9 @@ def report_motion_readings(body):
                 "payload": data
             }
 
-        msg_str = json.dumps(msg)
-
-        producer.produce(msg_str.encode('utf-8'))
+        # msg_str = json.dumps(msg)
+        # producer.produce(msg_str.encode('utf-8'))
+        kafka_wrapper.produce(msg)
 
 
         logger.info("Sending motion reading for event motion_report (id: %s): %s",trace_id,data)

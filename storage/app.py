@@ -11,21 +11,30 @@ import logging.config
 from sqlalchemy import select
 from pykafka import KafkaClient
 from pykafka.common import OffsetType 
+from kafka_wrapper import KafkaWrapper
 
+# Configure logging FIRST
+with open('../config/storage_log_config.yml', 'r') as f:
+    log_config = yaml.safe_load(f.read())
+    logging.config.dictConfig(log_config)
 
+logger = logging.getLogger(__name__)
+
+# Load app config
 with open('../config/storage_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
-
 
 hosts=app_config['events']['hostname']
 port=app_config['events']['port']
 topic=app_config['events']['topic']
 
-with open('../config/storage_log_config.yml', 'r') as f:
-    log_config = yaml.safe_load(f.read())
-    logging.config.dictConfig(log_config)
+kafka_wrapper = KafkaWrapper(
+    f"{hosts}:{port}",
+    topic.encode("utf-8")
+)
 
-logger = logging.getLogger('basicLogger')
+
+#logger = logging.getLogger('basicLogger')
 
 def report_temperature_readings(body):
     """Receives a temperature batch event and stores events in DB"""

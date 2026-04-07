@@ -10,21 +10,22 @@ import requests
 import json
 from flask import jsonify, make_response
 from pathlib import Path
+#from kafka_wrapper import KafkaWrapper
 
-#get_stats_endpoint is used for returning current statistics
-#populate_stats, takes the readings from the get_stats, & organizes them by min & max
-#init_schdular , is creating the schduled event with a set intravel thats configured in the 'app_conf.yml'
-
-
-
+# Configure logging FIRST
 with open('../config/processing_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
-logger = logging.getLogger('basicLogger')
+logger = logging.getLogger(__name__)
 
+# Load app config
 with open('../config/processing_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
+
+# THEN create Kafka wrapper
+#kafka_wrapper = KafkaWrapper("kafka:9092", b"events")
+
 
 INTRAVEL = app_config['scheduler']['interval']
 STATS_FILE = app_config['stats_file_name']['name']

@@ -1,4 +1,3 @@
-from app import app
 from models import Base
 from db import ENGINE
 import sys

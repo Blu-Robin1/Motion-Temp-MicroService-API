@@ -7,16 +7,21 @@ import yaml
 import logging
 import logging.config
 from pykafka import KafkaClient 
+#from kafka_wrapper import KafkaWrapper
 
+# Configure logging FIRST
 with open('../config/analyzer_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
-logger = logging.getLogger('basicLogger')
+logger = logging.getLogger(__name__)
 
+# Load app config
 with open('../config/analyzer_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
+# THEN create Kafka wrapper
+#kafka_wrapper = KafkaWrapper("kafka:9092", b"events")
 
 def get_temp_reading(index):
 
