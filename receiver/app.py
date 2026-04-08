@@ -9,14 +9,13 @@ import logging.config
 #from pykafka import KafkaClient 
 from kafka_wrapper import KafkaWrapper
 
-# Configure logging FIRST
 with open('../config/receiver_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger(__name__)
 
-# Load app config
+
 with open('../config/receiver_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 

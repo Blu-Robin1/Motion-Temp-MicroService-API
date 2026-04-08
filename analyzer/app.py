@@ -7,7 +7,7 @@ import yaml
 import logging
 import logging.config
 from pykafka import KafkaClient 
-#from kafka_wrapper import KafkaWrapper
+from kafka_wrapper import KafkaWrapper
 
 # Configure logging FIRST
 with open('../config/analyzer_log_config.yml', 'r') as f:
@@ -20,97 +20,57 @@ logger = logging.getLogger(__name__)
 with open('../config/analyzer_config.yml', 'r') as f:
     app_config = yaml.safe_load(f)
 
-# THEN create Kafka wrapper
-#kafka_wrapper = KafkaWrapper("kafka:9092", b"events")
+hostname=app_config['kafka']['hostname']
+topic=app_config['kafka']['topic']
+
+kafka_wrapper = KafkaWrapper(hostname, topic)
 
 def get_temp_reading(index):
-
     logger.info("Get request for temperature_reading")
 
-    client = KafkaClient(hosts=app_config["kafka"]["hostname"])
-    topic = client.topics[app_config["kafka"]["topic"].encode()]
-    consumer = topic.get_simple_consumer(
-        reset_offset_on_start=True,
-        consumer_timeout_ms=1000
-    )
-        
+    messages = kafka_wrapper.consume_all_messages()
     counter = 0
 
-    for msg in consumer:
-        message = msg.value.decode("utf-8")
-        data = json.loads(message)
-        payload = data.get("payload",{})
+    for msg in messages:
+        data = json.loads(msg.value.decode("utf-8"))
 
         if data.get("type") == "temperature_report":
-            payload = data.get("payload", {})
-
             if counter == index:
                 logger.info("Sending temperature_reading")
-                return payload, 200
-
+                return data.get("payload", {}), 200
             counter += 1
-    
-    try:
-        consumer.stop()
-    except Exception:
-        pass
 
     logger.info("Temperature reading not found")
     return {"message": f"No temperature event at index {index}!"}, 404
 
-
 def get_motion_reading(index):
+    logger.info("Get request for motion_reading")
 
-    logger.info(f"Get request for motion_reading")
-
-    client = KafkaClient(hosts=app_config["kafka"]["hostname"])
-    topic = client.topics[app_config["kafka"]["topic"].encode()]
-    consumer = topic.get_simple_consumer(reset_offset_on_start=True, consumer_timeout_ms=1000)
-    
+    messages = kafka_wrapper.consume_all_messages()
     counter = 0
 
-    for msg in consumer:
-        message = msg.value.decode("utf-8")
-        data = json.loads(message)
-        payload = data.get("payload",{})
+    for msg in messages:
+        data = json.loads(msg.value.decode("utf-8"))
 
         if data.get("type") == "motion_report":
-            payload = data.get("payload", {})
-
             if counter == index:
                 logger.info("Sending motion_reading")
-                return payload, 200
-
+                return data.get("payload", {}), 200
             counter += 1
-    
-    try:
-        consumer.stop()
-    except Exception:
-        pass
 
     logger.info("Motion reading not found")
-    return {"message": f"No Motion event at index {index}!"}, 404
-
+    return {"message": f"No motion event at index {index}!"}, 404
 
 
 def get_reading_stats():
-
     logger.info("Get request for stats")
 
-    client = KafkaClient(hosts=app_config["kafka"]["hostname"])
-    topic = client.topics[app_config["kafka"]["topic"].encode()]
-    consumer = topic.get_simple_consumer(
-        reset_offset_on_start=True,
-        consumer_timeout_ms=1000
-    )
-
+    messages = kafka_wrapper.consume_all_messages()
     num_temp = 0
     num_motion = 0
 
-    for msg in consumer:
-        message = msg.value.decode("utf-8")
-        data = json.loads(message)
-
+    for msg in messages:
+        data = json.loads(msg.value.decode("utf-8"))
         if data.get("type") == "temperature_report":
             num_temp += 1
         elif data.get("type") == "motion_report":
@@ -123,6 +83,7 @@ def get_reading_stats():
 
     logger.info("Sending stats")
     return stats, 200
+
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_middleware(
     CORSMiddleware,

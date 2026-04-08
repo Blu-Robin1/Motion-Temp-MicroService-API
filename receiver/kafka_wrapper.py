@@ -84,9 +84,6 @@ class KafkaWrapper:
         self.consumer = None
         self.producer = None
 
-    # -------------------------
-    # CONSUMER
-    # -------------------------
     def messages(self):
         if self.consumer is None:
             self.connect()
@@ -100,9 +97,6 @@ class KafkaWrapper:
                 self.reset()
                 self.connect()
 
-    # -------------------------
-    # PRODUCER
-    # -------------------------
     def produce(self, message: dict):
         """Send a JSON message to Kafka"""
         if self.producer is None:
