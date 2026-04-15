@@ -1,0 +1,11 @@
+scheduler:
+  interval: 30
+
+status_file_name:
+  name: "health_status.json"
+
+services:
+  Receiver: "http://receiver:8010/health"
+  Storage: "http://storage:8090/health"
+  Processing: "http://processing:8100/health"
+  Analyzer: "http://analyzer:8025/health"

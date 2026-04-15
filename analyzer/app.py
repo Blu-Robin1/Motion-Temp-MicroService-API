@@ -1,3 +1,4 @@
+from flask_cors import CORS
 import json
 import connexion
 from connexion.middleware import MiddlewarePosition
@@ -8,6 +9,12 @@ import logging
 import logging.config
 from pykafka import KafkaClient 
 from kafka_wrapper import KafkaWrapper
+
+# app.py
+
+def health_check():
+    return {"status": "ok"}
+
 
 # Configure logging FIRST
 with open('../config/analyzer_log_config.yml', 'r') as f:
@@ -85,22 +92,13 @@ def get_reading_stats():
     return stats, 200
 
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_middleware(
-    CORSMiddleware,
-    position=MiddlewarePosition.BEFORE_EXCEPTION,
-    allow_origins=['*'],
-    allow_credentials=True,
-    allow_methods=['*'],
-    allow_headers=['*'],
-)
+CORS(app.app, origins="*")
 
 app.add_api(
     "openapi.yml",
     strict_validation=True,
     validate_responses=True
 )
-
-application = app.app
 
 if __name__ == "__main__":
     app.run(port=8025, host="0.0.0.0")

@@ -6,6 +6,49 @@ const ANALYZER_API_URL = {
     motion: "http://localhost:8025/motiontemp/motion",    
     temperature: "http://localhost:8025/motiontemp/temperature"
 }
+const STATUS_URL = "http://localhost:8120/status";
+
+async function updateHealthDashboard() {
+  try {
+    const response = await fetch(STATUS_URL);
+    const data = await response.json();
+
+    console.log("HEALTH DATA:", data);
+
+    const normalize = (status) =>
+      status?.toLowerCase() === "up" ? "Up" : "Down";
+
+    document.getElementById("receiver-status").textContent =
+      normalize(data.Receiver);
+
+    document.getElementById("storage-status").textContent =
+      normalize(data.Storage);
+
+    document.getElementById("processing-status").textContent =
+      normalize(data.Processing);
+
+    document.getElementById("analyzer-status").textContent =
+      normalize(data.Analyzer);
+
+    document.getElementById("receiver-status").className =
+      normalize(data.Receiver) === "Up" ? "status-up" : "status-down";
+
+    document.getElementById("storage-status").className =
+      normalize(data.Storage) === "Up" ? "status-up" : "status-down";
+
+    document.getElementById("processing-status").className =
+      normalize(data.Processing) === "Up" ? "status-up" : "status-down";
+
+    document.getElementById("analyzer-status").className =
+      normalize(data.Analyzer) === "Up" ? "status-up" : "status-down";
+
+    document.getElementById("last-update").textContent =
+      `Last update: ${timeAgo(data.last_update)}`;
+
+  } catch (error) {
+    console.error("Error updating health dashboard:", error);
+  }
+}
 
 // This function fetches and updates the general statistics
 const makeReq = (url, cb) => {
@@ -57,9 +100,33 @@ const updateErrorMessages = (message) => {
     }, 7000)
 }
 
-const setup = () => {
-    getStats()
-    setInterval(() => getStats(), 4000) // Update every 4 seconds
-}
+const timeAgo = (timestamp) => {
+  const now = new Date();
+  const past = new Date(timestamp);
 
-document.addEventListener('DOMContentLoaded', setup)
+  const diffMs = now - past;
+  const diffSec = Math.floor(diffMs / 1000);
+
+  if (diffSec < 60) return `${diffSec} seconds ago`;
+
+  const diffMin = Math.floor(diffSec / 60);
+  if (diffMin < 60) return `${diffMin} minutes ago`;
+
+  const diffHr = Math.floor(diffMin / 60);
+  if (diffHr < 24) return `${diffHr} hours ago`;
+
+  const diffDays = Math.floor(diffHr / 24);
+  return `${diffDays} days ago`;
+};
+
+const setup = () => {
+    updateHealthDashboard();
+    getStats();
+
+    setInterval(() => {
+        updateHealthDashboard();
+        getStats();
+    }, 4000);
+};
+
+document.addEventListener('DOMContentLoaded', setup);

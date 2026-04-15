@@ -37,6 +37,23 @@ paths:
           description: batch successfully received
         '400':
           description: 'invalid input, object invalid'
+  /health:
+    get:
+      summary: Health check endpoint
+      description: Returns 200 OK if the service is running.
+      operationId: app.health_check      
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "ok"
+
 
 components:
   schemas:

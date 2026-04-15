@@ -57,6 +57,18 @@ services:
       - ./config:/config
       - ./logs:/logs
       - ./data/processing:/data
+  health-check:
+    build:
+      context: .
+      dockerfile: healthchecker/Dockerfile
+    ports:
+      - "8120:8120"
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+      - ./data/processing:/data
+      - ./healthchecker/health_status.json:/app/health_status.json
+    restart: unless-stopped
   dashboard:
     build:
       context: .

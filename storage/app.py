@@ -1,3 +1,4 @@
+from flask_cors import CORS
 from datetime import datetime
 import json
 from threading import Thread
@@ -12,6 +13,12 @@ from sqlalchemy import select
 from pykafka import KafkaClient
 from pykafka.common import OffsetType 
 from kafka_wrapper import KafkaWrapper
+
+# app.py
+
+def health_check():
+    return {"status": "ok"}
+
 
 # Configure logging FIRST
 with open('../config/storage_log_config.yml', 'r') as f:
@@ -182,14 +189,14 @@ def setup_kafka_thread():
     
 
 app = connexion.FlaskApp(__name__, specification_dir='')
+CORS(app.app, origins="*")
+
 app.add_api(
     "openapi.yml",
     strict_validation=True,
     validate_responses=True
 )
 
-application = app.app
-
-if __name__=="__main__":
+if __name__ == "__main__":
     setup_kafka_thread()
     app.run(port=8090, host="0.0.0.0")

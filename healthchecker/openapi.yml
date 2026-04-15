@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Health Checker API
+  version: 1.0.0
+paths:
+  /status:
+    get:
+      summary: Get health status of all services
+      operationId: app.get_status
+      responses:
+        '200':
+          description: Current statuses
+          content:
+            application/json:
+              schema:
+                type: object
+        '404':
+          description: No status data available
+          content:
+            application/json:
+              schema:
+                type: object

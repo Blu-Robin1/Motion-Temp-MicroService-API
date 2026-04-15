@@ -1,3 +1,4 @@
+from flask_cors import CORS
 import datetime
 #import json
 import connexion
@@ -8,6 +9,11 @@ import logging
 import logging.config
 #from pykafka import KafkaClient 
 from kafka_wrapper import KafkaWrapper
+
+
+def health_check():
+    return {"status": "ok"}
+
 
 with open('../config/receiver_log_config.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
@@ -118,13 +124,13 @@ def report_motion_readings(body):
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
+CORS(app.app, origins="*")
+
 app.add_api(
     "openapi.yml",
     strict_validation=True,
     validate_responses=True
 )
-
-application = app.app
 
 if __name__ == "__main__":
     app.run(port=8010, host="0.0.0.0")

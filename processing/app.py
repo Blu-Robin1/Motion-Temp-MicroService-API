@@ -11,6 +11,13 @@ import json
 from flask import jsonify, make_response
 from pathlib import Path
 #from kafka_wrapper import KafkaWrapper
+from flask_cors import CORS
+
+# app.py
+
+def health_check():
+    return {"status": "ok"}
+
 
 # Configure logging FIRST
 with open('../config/processing_log_config.yml', 'r') as f:
@@ -139,15 +146,9 @@ def init_scheduler(INTRAVEL):
     sched.add_job(populate_stats, 'interval', seconds=INTRAVEL)
     sched.start()
 
+
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_middleware(
-    CORSMiddleware,
-    position=MiddlewarePosition.BEFORE_EXCEPTION,
-    allow_origins=['*'],
-    allow_credentials=True,
-    allow_methods=['*'],
-    allow_headers=['*'],
-)
+CORS(app.app, origins="*")
 
 app.add_api(
     "openapi.yml",
@@ -156,5 +157,5 @@ app.add_api(
 )
 
 if __name__ == "__main__":
-    init_scheduler(INTRAVEL) 
+    init_scheduler(INTRAVEL)
     app.run(port=8100, host="0.0.0.0")
