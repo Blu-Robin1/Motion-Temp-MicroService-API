@@ -101,7 +101,7 @@ def get_status():
         return {"message": "No status data available"}, 404
     return statuses, 200
 
-app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
+app.add_api("openapi.yml", strict_validation=True, validate_responses=True, base_path="/health")
 
 if __name__ == "__main__":
     update_statuses()  # Initial run before scheduler starts

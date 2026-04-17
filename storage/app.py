@@ -13,6 +13,7 @@ from sqlalchemy import select
 from pykafka import KafkaClient
 from pykafka.common import OffsetType 
 from kafka_wrapper import KafkaWrapper
+import os
 
 # app.py
 
@@ -194,7 +195,9 @@ CORS(app.app, origins="*")
 app.add_api(
     "openapi.yml",
     strict_validation=True,
-    validate_responses=True
+    validate_responses=True,
+    base_path="/storage"
+
 )
 
 if __name__ == "__main__":

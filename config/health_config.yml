@@ -5,7 +5,19 @@ status_file_name:
   name: "health_status.json"
 
 services:
-  Receiver: "http://receiver:8010/health"
-  Storage: "http://storage:8090/health"
-  Processing: "http://processing:8100/health"
-  Analyzer: "http://analyzer:8025/health"
+  # If Receiver has a base_path: /receiver
+  Receiver: "http://receiver:8010/receiver/health"
+  
+  # If Storage has a base_path: /storage
+  Storage: "http://storage:8090/storage/health"
+  
+  # You previously mentioned processing/processing
+  Processing: "http://processing:8100/processing/health"
+  
+  # If Analyzer has a base_path: /analyzer
+  Analyzer: "http://analyzer:8025/analyzer/health"
+# services:
+#   Receiver: "http://receiver/health"
+#   Storage: "http://storage/health"
+#   Processing: "http://processing/health"
+#   Analyzer: "http://analyzer/health"

@@ -1,12 +1,11 @@
 /* UPDATE THESE VALUES TO MATCH YOUR SETUP */
-
-const PROCESSING_STATS_API_URL = "http://localhost:8100/stats"
+const PROCESSING_STATS_API_URL = "/processing/stats";
 const ANALYZER_API_URL = {
-    stats: "http://localhost:8025/stats",
-    motion: "http://localhost:8025/motiontemp/motion",    
-    temperature: "http://localhost:8025/motiontemp/temperature"
-}
-const STATUS_URL = "http://localhost:8120/status";
+    stats: "/analyzer/stats",
+    motion: "/analyzer/motiontemp/motion",    
+    temperature: "/analyzer/motiontemp/temperature"
+};
+const STATUS_URL = "/health/status"; // Matches localhost/health/status
 
 async function updateHealthDashboard() {
   try {

@@ -12,6 +12,7 @@ from flask import jsonify, make_response
 from pathlib import Path
 #from kafka_wrapper import KafkaWrapper
 from flask_cors import CORS
+import os
 
 # app.py
 
@@ -153,7 +154,9 @@ CORS(app.app, origins="*")
 app.add_api(
     "openapi.yml",
     strict_validation=True,
-    validate_responses=True
+    validate_responses=True,
+    base_path="/processing"
+
 )
 
 if __name__ == "__main__":

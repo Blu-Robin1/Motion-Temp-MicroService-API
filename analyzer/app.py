@@ -9,6 +9,7 @@ import logging
 import logging.config
 from pykafka import KafkaClient 
 from kafka_wrapper import KafkaWrapper
+import os
 
 # app.py
 
@@ -97,7 +98,9 @@ CORS(app.app, origins="*")
 app.add_api(
     "openapi.yml",
     strict_validation=True,
-    validate_responses=True
+    validate_responses=True,
+    base_path="/analyzer"
+
 )
 
 if __name__ == "__main__":

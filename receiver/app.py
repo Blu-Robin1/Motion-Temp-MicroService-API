@@ -9,7 +9,7 @@ import logging
 import logging.config
 #from pykafka import KafkaClient 
 from kafka_wrapper import KafkaWrapper
-
+import os
 
 def health_check():
     return {"status": "ok"}
@@ -124,12 +124,15 @@ def report_motion_readings(body):
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
+
 CORS(app.app, origins="*")
+
 
 app.add_api(
     "openapi.yml",
     strict_validation=True,
-    validate_responses=True
+    validate_responses=True,
+    base_path="/receiver"
 )
 
 if __name__ == "__main__":
