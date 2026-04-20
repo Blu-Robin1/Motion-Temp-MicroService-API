@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Notifier Service API
+  version: 1.0.0
+  description: Service for receiving and persisting system alerts
+
+paths:
+  /alerts:
+    post:
+      summary: Records a new alert
+      operationId: app.post_alert
+      description: Receives an alert and saves it to the local persistence file
+      responses:
+        '201':
+          description: Alert recorded successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Alert recorded successfully
+        '400':
+          description: Invalid request body
+      requestBody:
+        description: Alert details
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - alert_id
+                - message
+              properties:
+                alert_id:
+                  type: string
+                  format: uuid
+                  example: "550e8400-e29b-41d4-a716-446655440000"
+                message:
+                  type: string
+                  example: "High temperature detected in sensor 01"

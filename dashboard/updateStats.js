@@ -1,4 +1,5 @@
 /* UPDATE THESE VALUES TO MATCH YOUR SETUP */
+
 const PROCESSING_STATS_API_URL = "/processing/stats";
 const ANALYZER_API_URL = {
     stats: "/analyzer/stats",
