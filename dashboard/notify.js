@@ -1,8 +1,7 @@
-/* ADD TO TOP OF JS FILE */
 // const NOTIFIER_API_URL = "/notifier/alerts";
 // const sendAlert = async (alertMessage) => {
 //     const alertData = {
-//         alert_id: crypto.randomUUID(), // Generates a unique ID for the mapping
+//         alert_id: crypto.randomUUID(),
 //         message: alertMessage
 //     };
 
